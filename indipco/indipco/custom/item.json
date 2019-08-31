@@ -636,5 +636,5 @@
    "value": "FIFO"
   }
  ],
- "sync_on_migrate": 1
+ "sync_on_migrate": 0
 }
