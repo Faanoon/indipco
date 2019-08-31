@@ -119,4 +119,6 @@ app_license = "MIT"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "indipco.event.get_events"
 # }
-
+fixtures = ["Custom Field",
+            "Property Setter"
+            ]
