@@ -1,0 +1,38 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2019-09-04 13:43:52.933807",
+  "name": "Pending",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "",
+  "workflow_state_name": "Pending"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "ok-sign",
+  "modified": "2019-09-04 13:43:52.941450",
+  "name": "Approved",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Success",
+  "workflow_state_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "remove",
+  "modified": "2019-09-04 13:43:52.950895",
+  "name": "Rejected",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Danger",
+  "workflow_state_name": "Rejected"
+ }
+]

@@ -120,5 +120,11 @@ app_license = "MIT"
 # 	"frappe.desk.doctype.event.event.get_events": "indipco.event.get_events"
 # }
 fixtures = ["Custom Field",
-            "Property Setter"
+            "Custom Script",
+            "Property Setter",
+            "Print Format",
+            "Letter Head",
+            "Workflow",
+            "Workflow State",
+            "Workflow Action"
             ]
