@@ -123,7 +123,6 @@ fixtures = ["Custom Field",
             "Custom Script",
             "Property Setter",
             "Print Format",
-            "Letter Head",
             "Workflow",
             "Workflow State",
             "Workflow Action"
