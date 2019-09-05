@@ -208,5 +208,5 @@
  "custom_perms": [],
  "doctype": "Purchase Invoice Item",
  "property_setters": [],
- "sync_on_migrate": 1
+ "sync_on_migrate": 0
 }
