@@ -8,14 +8,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-09-09 12:23:35.939349",
+   "creation": "2019-09-10 12:51:38.014581",
    "default_value": null,
    "doc_type": "Work Order",
    "docstatus": 0,
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 12:23:35.939349",
+   "modified": "2019-09-10 12:51:38.014581",
    "modified_by": "Administrator",
    "name": "Work Order-naming_series-default",
    "owner": "Administrator",
@@ -24,7 +24,7 @@
    "parenttype": null,
    "property": "default",
    "property_type": "Text",
-   "value": "IND-WO-.YYYY.-"
+   "value": ""
   },
   {
    "_assign": null,

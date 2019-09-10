@@ -8,14 +8,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-09-09 12:29:42.879972",
+   "creation": "2019-09-10 12:45:52.524981",
    "default_value": null,
    "doc_type": "Payment Entry",
    "docstatus": 0,
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 12:29:42.879972",
+   "modified": "2019-09-10 12:45:52.524981",
    "modified_by": "Administrator",
    "name": "Payment Entry-naming_series-default",
    "owner": "Administrator",
@@ -24,7 +24,7 @@
    "parenttype": null,
    "property": "default",
    "property_type": "Text",
-   "value": "IND-PE-.YYYY.-"
+   "value": ""
   },
   {
    "_assign": null,
