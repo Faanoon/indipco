@@ -15,7 +15,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-10 12:52:46.737088",
+   "modified": "2019-09-11 10:04:59.308753",
    "modified_by": "Administrator",
    "name": "Blanket Order-naming_series-default",
    "owner": "Administrator",
@@ -38,7 +38,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 12:22:16.907142",
+   "modified": "2019-09-11 10:04:59.069575",
    "modified_by": "Administrator",
    "name": "Blanket Order-naming_series-options",
    "owner": "Administrator",
@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "options",
    "property_type": "Text",
-   "value": "IND-BSO-.YYYY.-\nMFG-BLR-.YYYY.-"
+   "value": "\nIND-BSO-.YYYY.-\nMFG-BLR-.YYYY.-"
   }
  ],
  "sync_on_migrate": 0

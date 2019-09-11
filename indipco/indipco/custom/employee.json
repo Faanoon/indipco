@@ -15,7 +15,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-10 12:55:54.615552",
+   "modified": "2019-09-11 10:03:58.392453",
    "modified_by": "Administrator",
    "name": "Employee-naming_series-default",
    "owner": "Administrator",
@@ -38,7 +38,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 09:10:31.003083",
+   "modified": "2019-09-11 10:03:58.154582",
    "modified_by": "Administrator",
    "name": "Employee-naming_series-options",
    "owner": "Administrator",
@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "options",
    "property_type": "Text",
-   "value": "IND-HR-EMP-\nHR-EMP-"
+   "value": "\nIND-HR-EMP-\nHR-EMP-"
   },
   {
    "_assign": null,

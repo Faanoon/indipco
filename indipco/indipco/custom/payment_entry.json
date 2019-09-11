@@ -15,7 +15,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-10 12:45:52.524981",
+   "modified": "2019-09-11 10:08:42.240005",
    "modified_by": "Administrator",
    "name": "Payment Entry-naming_series-default",
    "owner": "Administrator",
@@ -38,7 +38,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 12:29:42.696333",
+   "modified": "2019-09-11 10:08:41.998897",
    "modified_by": "Administrator",
    "name": "Payment Entry-naming_series-options",
    "owner": "Administrator",
@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "options",
    "property_type": "Text",
-   "value": "IND-PE-.YYYY.-\nACC-PAY-.YYYY.-"
+   "value": "\nIND-PE-.YYYY.-\nACC-PAY-.YYYY.-"
   },
   {
    "_assign": null,

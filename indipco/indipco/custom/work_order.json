@@ -15,7 +15,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-10 12:51:38.014581",
+   "modified": "2019-09-11 10:05:55.935920",
    "modified_by": "Administrator",
    "name": "Work Order-naming_series-default",
    "owner": "Administrator",
@@ -38,7 +38,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-09 12:23:35.705606",
+   "modified": "2019-09-11 10:05:55.697065",
    "modified_by": "Administrator",
    "name": "Work Order-naming_series-options",
    "owner": "Administrator",
@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "options",
    "property_type": "Text",
-   "value": "IND-WO-.YYYY.-\nMFG-WO-.YYYY.-"
+   "value": "\nIND-WO-.YYYY.-\nMFG-WO-.YYYY.-"
   },
   {
    "_assign": null,
