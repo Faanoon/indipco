@@ -1,1 +1,13 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Item",
+  "modified": "2019-09-19 12:37:15.340888",
+  "name": "Item-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Item', {\n\tvalidate(frm) {\n\t\t// your code here\n\t\tif (frm.doc.item_group==\"All Item Groups\") {\n\t\t    msgprint(\"Item Group All Item Groups not allowed\");\n\t\t    validated=false;\n\t\t}\n    }\n}\n)"
+ }
+]
