@@ -6,13 +6,17 @@ from frappe.model.document import Document
 #@frappe.whitelist(allow_guest=True)
 def duplicate_loan(self, method):
         last_transaction = frappe.get_list("Loan",
-            fields=["applicant", "status"],
+            fields=["loan_type", "status","applicant","name"],
             filters = {
                 "applicant": self.applicant,
                 "posting_date": ("<=", self.posting_date),
+                "loan_type" : "Personal Loan",
                 "name": ("!=", self.name)
             })
-#        if last_transaction and last_transaction[0].applicant=="1":
-        if self.applicant=="1":
-            frappe.throw(_("You have pending loan"))
+        if self.loan_type=="Personal Loan":
+#            for d in self.repayment_schedule:
+#                if d.payment<=get_today():
+#                    if d.balance_loan_amount=="0":
+                        frappe.throw(("You have not cleared previous loan", last_transaction[0].name))
 #            msg = _("Article {0} {1} You have pending loan {2}")
+
