@@ -80,7 +80,7 @@ app_license = "MIT"
 # Hook on document methods and events
 doc_events = {
  	"Loan": {
- 		"validate": "indipco.hooks_call.duplicate_loan"
+ 		"validate": "indipco.hooks_call.loan.duplicate_loan"
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 	}
