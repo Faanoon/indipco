@@ -78,15 +78,28 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
-
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
+doc_events = {
+ 	"Loan": {
+ 		"validate": "indipco.hooks_call.duplicate_loan"
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
+	}
+}
+#doc_events = {
+#	"Loan": {
+#		"validate": "indipco.hooks_call.duplicate_loan"
 #	}
-# }
-
+#},
+#------------------------------------------------------------------------------
+#	"*": {
+#		"validate": "footwear_erpnext.hooks_call.common.validate_all_doctype"
+#	},
+#	"Item": {
+#		"autoname": "footwear_erpnext.hooks_call.item.autoname_custom_item",
+#		"validate": ["footwear_erpnext.hooks_call.item.set_uom_and_warehouse",
+#					"footwear_erpnext.hooks_call.item.validate_construction"]
+#	},
+#------------------------------------------------------------------------------
 # Scheduled Tasks
 # ---------------
 
