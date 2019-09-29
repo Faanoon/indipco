@@ -35,7 +35,7 @@
    "label": "Description"
   }
  ],
- "modified": "2019-09-28 21:15:14.302094",
+ "modified": "2019-09-29 11:19:57.154867",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Workstation Type",
@@ -108,6 +108,5 @@
  "search_fields": "stage",
  "sort_field": "stage",
  "sort_order": "DESC",
- "title_field": "stage",
  "track_changes": 1
 }
