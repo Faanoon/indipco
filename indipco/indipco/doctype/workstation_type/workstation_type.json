@@ -1,0 +1,113 @@
+{
+ "autoname": "field:data_1",
+ "creation": "2019-09-28 20:59:01.572613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_1",
+  "stage",
+  "description"
+ ],
+ "fields": [
+  {
+   "description": "Ex: Melting Workstation, Annealing Workstation",
+   "fieldname": "data_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workstation Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Stage",
+   "options": "\nStage1\nStage2\nStage3\nStage4\nStage5\nStage6\nStage7\nStage8\nStage9\nStage10\nStage11\nStage12\nStage13\nStage14\nStage15",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "modified": "2019-09-28 21:15:14.302094",
+ "modified_by": "Administrator",
+ "module": "indipco",
+ "name": "Workstation Type",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "restrict_to_domain": "Manufacturing",
+ "search_fields": "stage",
+ "sort_field": "stage",
+ "sort_order": "DESC",
+ "title_field": "stage",
+ "track_changes": 1
+}
