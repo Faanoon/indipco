@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:data_1",
  "creation": "2019-09-28 20:59:01.572613",
  "doctype": "DocType",
@@ -35,7 +36,7 @@
    "label": "Description"
   }
  ],
- "modified": "2019-09-29 11:19:57.154867",
+ "modified": "2019-09-29 21:34:48.869928",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Workstation Type",
