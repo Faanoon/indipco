@@ -15,7 +15,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-30 08:39:36.075985",
+   "modified": "2019-09-30 09:05:38.133842",
    "modified_by": "Administrator",
    "name": "Asset-naming_series-default",
    "owner": "Administrator",
@@ -24,7 +24,7 @@
    "parenttype": null,
    "property": "default",
    "property_type": "Text",
-   "value": "IND-ASS-.####"
+   "value": ""
   },
   {
    "_assign": null,
@@ -38,7 +38,7 @@
    "doctype_or_field": "DocField",
    "field_name": "naming_series",
    "idx": 0,
-   "modified": "2019-09-30 08:39:36.044372",
+   "modified": "2019-09-30 09:05:38.103411",
    "modified_by": "Administrator",
    "name": "Asset-naming_series-options",
    "owner": "Administrator",
@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "options",
    "property_type": "Text",
-   "value": "IND-ASS-.####\nACC-ASS-.YYYY.-"
+   "value": "\nIND-ASS-.####\nACC-ASS-.YYYY.-"
   }
  ],
  "sync_on_migrate": 1
