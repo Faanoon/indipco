@@ -8,7 +8,7 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-09-19 08:06:28.574181",
+   "creation": "2019-09-29 08:59:58.799693",
    "default_value": null,
    "doc_type": "Item Barcode",
    "docstatus": 0,
@@ -27,5 +27,5 @@
    "value": "1"
   }
  ],
- "sync_on_migrate": 0
+ "sync_on_migrate": 1
 }
