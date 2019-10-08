@@ -3,11 +3,22 @@
   "docstatus": 0,
   "doctype": "Custom Script",
   "dt": "Item",
-  "modified": "2019-09-19 12:37:15.340888",
+  "modified": "2019-10-07 00:50:17.431521",
   "name": "Item-Client",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
   "script": "frappe.ui.form.on('Item', {\n\tvalidate(frm) {\n\t\t// your code here\n\t\tif (frm.doc.item_group==\"All Item Groups\") {\n\t\t    msgprint(\"Item Group All Item Groups not allowed\");\n\t\t    validated=false;\n\t\t}\n    }\n}\n)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Material Request",
+  "modified": "2019-10-07 00:50:25.637098",
+  "name": "Material Request-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Material Request', {\n\trefresh(frm) {\n\t\t// your code here\n\t\t\n\n\n\t}\n})\n\nfrappe.ui.form.on('Material Request Item', {\n\trefresh(frm) {\n\t\t// your code here\n//\t\tif (frm.doc.material_request_type!=\"Material Transfer\" && )\n\t\t\n\t}\n})"
  }
 ]
