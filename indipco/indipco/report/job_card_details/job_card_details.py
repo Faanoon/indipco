@@ -16,12 +16,14 @@ def get_columns():
 	return [
 		_("Wok Order") + ":Link/Work Order:130",
 		_("Job Card") + ":Link/Job Card:100",
-		_("Operation") + ":Data:140",
-		_("Workstation") + ":Data:140",
+		_("Operation") + ":Data:130",
+		_("Workstation") + ":Data:130",
 		_("For Quantity") + ":Float:100",
 		_("Completed Qty") + ":Float:110",
-		_("Time Consumed (min)") + ":Float:150",
-		_("Status") + ":Data:100"
+		_("Rejection") + ":Float:80",
+		_("Time Takes(min)") + ":Float:60",
+		_("JC Status") + ":Data:80",
+		_("WO Status") + ":Data:80"
 	]
 
 def get_data():
@@ -33,15 +35,17 @@ def get_data():
 	A.workstation,
 	A.for_Quantity,
 	A.total_completed_qty,
+	(A.for_quantity-A.total_completed_qty),
 	A.total_time_in_mins,
-	A.status
+	A.status,
+	B.status
 
 	FROM
 	`tabJob Card` as A,
-	`tabJob Card Time Log` as B
+	`tabWork Order` as B
 
 	WHERE
-	A.name=B.parent
+	A.work_order=B.name
 
 	ORDER BY A.name ASC
 
