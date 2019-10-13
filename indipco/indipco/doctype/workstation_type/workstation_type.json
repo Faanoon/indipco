@@ -8,7 +8,8 @@
  "field_order": [
   "data_1",
   "stage",
-  "description"
+  "description",
+  "company"
  ],
  "fields": [
   {
@@ -34,9 +35,15 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
   }
  ],
- "modified": "2019-09-29 21:34:48.869928",
+ "modified": "2019-10-13 07:57:08.710613",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Workstation Type",

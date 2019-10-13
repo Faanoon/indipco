@@ -19,8 +19,9 @@ def get_columns():
 		_("Operation") + ":Data:130",
 		_("Workstation") + ":Data:130",
 		_("For Quantity") + ":Float:100",
-		_("Completed Qty") + ":Float:110",
-		_("Rejection") + ":Float:80",
+		_("Transfered Qty") + ":Float:100",
+		_("Rejection") + ":Float:75",
+		_("Completed Qty") + ":Float:80",
 		_("Time Takes(min)") + ":Float:60",
 		_("JC Status") + ":Data:80",
 		_("WO Status") + ":Data:80"
@@ -34,8 +35,9 @@ def get_data():
 	A.operation,
 	A.workstation,
 	A.for_Quantity,
-	A.total_completed_qty,
-	(A.for_quantity-A.total_completed_qty),
+	A.transferred_qty,
+	A.ind_rejection,
+	IF(A.status="Completed", A.for_Quantity-A.ind_rejection,0),
 	A.total_time_in_mins,
 	A.status,
 	B.status
