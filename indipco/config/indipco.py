@@ -12,18 +12,20 @@ def get_data():
               "name": "Workstation Type",
               "label": _("Workstation Type"),
               "description": _("Articles which members issue and return."),
-            },
+            }
+          ]
+      },
+      {
+        "label":_("Reports"),
+        "icon": "octicon octicon-briefcase",
+        "items": [
             {
               "type": "report",
               "is_query_report": True,
               "name": "Job Card Details",
               "doctype": "Job Card"
             }
-
-
-
-
-
-          ]
+        ]
       }
+
   ]
