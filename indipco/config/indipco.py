@@ -1,0 +1,29 @@
+from __future__ import unicode_literals
+from frappe import _
+
+def get_data():
+    return [
+      {
+        "label":_("Documents"),
+        "icon": "octicon octicon-briefcase",
+        "items": [
+            {
+              "type": "doctype",
+              "name": "Workstation Type",
+              "label": _("Workstation Type"),
+              "description": _("Articles which members issue and return."),
+            },
+            {
+              "type": "report",
+              "is_query_report": True,
+              "name": "Job Card Details",
+              "doctype": "Job Card"
+            }
+
+
+
+
+
+          ]
+      }
+  ]
