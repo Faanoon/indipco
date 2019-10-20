@@ -8,14 +8,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-10-05 11:52:19.655242",
+   "creation": "2019-10-20 11:32:00.633428",
    "default_value": null,
    "doc_type": "Blanket Order",
    "docstatus": 0,
    "doctype_or_field": "DocType",
    "field_name": null,
    "idx": 0,
-   "modified": "2019-10-05 11:52:19.655242",
+   "modified": "2019-10-20 11:32:00.633428",
    "modified_by": "Administrator",
    "name": "Blanket Order-default_print_format",
    "owner": "Administrator",
@@ -24,7 +24,7 @@
    "parenttype": null,
    "property": "default_print_format",
    "property_type": "Data",
-   "value": "Blanket Order"
+   "value": "IND Blanket Order"
   },
   {
    "_assign": null,
