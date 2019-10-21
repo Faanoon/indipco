@@ -830,5 +830,31 @@
   "raw_printing": 0,
   "show_section_headings": 0,
   "standard": "No"
+ },
+ {
+  "align_labels_right": 0,
+  "css": null,
+  "custom_format": 0,
+  "default_print_language": null,
+  "disabled": 0,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<pre style=\\\"background-color:#FDFEFE;text-align:right;\\\">{{doc.doctype}}: {{doc.name}}\\nDate: {{doc.get_formatted(\\\"posting_date\\\")}}</pre>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre style=\\\"width:100%;font-size:12px;text-align:left;background-color:#FDFEFE;\\\"><b>Supplier Name & Address</b><br>{{doc.supplier_name}}<br>{{doc.address_display}}</pre>\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre style=\\\"width:100%;text-align:left;font-size:12px;background-color:#FDFEFE;\\\">Currency:{{doc.currency}}<br>Conversion Rate: {{doc.get_formatted(\\\"conversion_rate\\\")}}</pre>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<!DOCTYPE html>\\n<style>\\n  table, th, td {\\n    border: 0.2px solid orange;\\n    padding: 10px;\\n  }\\n</style>\\n\\n<table>\\n <thead>\\n  <tr>\\n    <th style=\\\"width:5%;text-align:center;\\\">SL No</th>\\n    <th style=\\\"text-align:center;\\\">Item Name</th>\\n    <th style=\\\"width:7%;text-align:center;\\\">Qty</th>\\n    <th style=\\\"width:8%;text-align:center;\\\">Rate ({{doc.currency}})</th>\\n    <th style=\\\"width:10%;text-align:center;\\\">Amount ({{doc.currency}})</th>\\n    <th style=\\\"width:6%;text-align:center;\\\">UOM</th>\\n    <th style=\\\"text-align:center;\\\">Purchase Order</th>\\n  </tr>\\n </thread>\\n  {%- for row in doc.items -%} \\n  <tr>\\n    <td style=\\\"text-align:center;\\\">{{row.idx}}</td>\\n    <td>{{row.item_name}}</td>\\n    <td style=\\\"text-align:center;\\\">{{row.qty}}</td>\\n    <td style=\\\"text-align:center;\\\">{{row.rate}}</td>\\n    <td style=\\\"text-align:center;\\\">{{row.amount}}</td>\\n    <td style=\\\"text-align:center;\\\">{{row.uom}}</td>\\n    <td>{{row.purchase_order}}</td>\\n    {%- endfor -%}\\n  </tr>\\n</table>\\n<br>\\n<p style=\\\"text-align:right;\\\">\\nTotal Qty: {{doc.get_formatted(\\\"total_qty\\\")}} <br>\\n</p>\\n<b style=\\\"text-align:center;\\\">Tax Calculation</b>\\n{{doc.other_charges_calculation}}\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre style=\\\"background-color:#FDFEFE;\\\">\\nRemarks : {{doc.remarks}}\\n\\n\\n\\n</pre>\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre style=\\\"text-align:right;width:100%;background-color:#FDFEFE;\\\">\\nNet Total   : {{doc.get_formatted(\\\"total\\\")}}\\nTotal Taxes : {{doc.get_formatted(\\\"total_taxes_and_charges\\\")}}\\nGrand Total : {{doc.get_formatted(\\\"grand_total\\\")}}\\nIn Words : {{doc.in_words}}\\n</pre>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre style=\\\"text-align:center;background-color:#FDFEFE;\\\">\\n\\n\\nAuthorized Signatory\\n</pre>\"}]",
+  "html": null,
+  "line_breaks": 0,
+  "modified": "2019-10-21 15:23:42.193528",
+  "module": "Stock",
+  "name": "IND Purchase Receipt",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 1,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 0,
+  "standard": "No"
  }
 ]

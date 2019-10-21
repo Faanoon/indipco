@@ -4478,5 +4478,25 @@
   "property": "default_print_format",
   "property_type": "Data",
   "value": "IND Purchase Invoice"
+ },
+ {
+  "_assign": null,
+  "_comments": null,
+  "_liked_by": null,
+  "_user_tags": null,
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "modified": "2019-10-21 15:17:48.172812",
+  "name": "Purchase Receipt-default_print_format",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default_print_format",
+  "property_type": "Data",
+  "value": "IND Purchase Receipt"
  }
 ]
