@@ -24,6 +24,12 @@ def get_data():
               "is_query_report": True,
               "name": "Job Card Details",
               "doctype": "Job Card"
+            },
+            {
+              "type": "report",
+              "is_query_report": True,
+              "name": "Project Task List",
+              "doctype": "Task"
             }
         ]
       }
