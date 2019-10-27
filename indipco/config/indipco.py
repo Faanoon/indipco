@@ -30,7 +30,14 @@ def get_data():
               "is_query_report": True,
               "name": "Project Task List",
               "doctype": "Task"
+            },
+            {
+              "type": "report",
+              "is_query_report": True,
+              "name": "Quotation Analysis",
+              "doctype": "Quotation"
             }
+
         ]
       }
 

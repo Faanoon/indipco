@@ -8,7 +8,7 @@
  "idx": 0,
  "is_standard": "Yes",
  "letter_head": "Indipco",
- "modified": "2019-10-27 12:20:04.941538",
+ "modified": "2019-10-27 14:28:33.283703",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Quotation Analysis",
@@ -29,6 +29,9 @@
   },
   {
    "role": "Maintenance User"
+  },
+  {
+   "role": "System Manager"
   }
  ]
 }
