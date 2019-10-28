@@ -17,6 +17,6 @@ def duplicate_loan(self, method):
 #            for d in self.repayment_schedule:
 #                if d.payment<=get_today():
 #                    if d.balance_loan_amount=="0":
-                        frappe.throw(("You have not cleared previous loan", last_transaction[0].name))
+                        frappe.throw(("You have not cleared previous loan"))
 #            msg = _("Article {0} {1} You have pending loan {2}")
 

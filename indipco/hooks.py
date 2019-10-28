@@ -83,6 +83,9 @@ doc_events = {
  		"validate": "indipco.hooks_call.loan.duplicate_loan"
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
+	},
+ 	"Material Request": {
+                "validate": "indipco.hooks_call.material_request.sales_user_validation"
 	}
 }
 #doc_events = {
