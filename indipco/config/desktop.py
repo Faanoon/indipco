@@ -6,9 +6,9 @@ def get_data():
 	return [
 		{
 			"module_name": "indipco",
-			"color": "blue",
+			"color": "red",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
 			"label": _("indipco") 
-		}
+		},
 	]
