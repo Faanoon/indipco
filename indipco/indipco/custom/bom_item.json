@@ -1,0 +1,31 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "BOM Item",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2019-10-29 11:18:10.832031",
+   "default_value": null,
+   "doc_type": "BOM Item",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "source_warehouse",
+   "idx": 0,
+   "modified": "2019-10-29 11:18:10.832031",
+   "modified_by": "Administrator",
+   "name": "BOM Item-source_warehouse-default",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "default",
+   "property_type": "Text",
+   "value": "Work In Progress - INDIPCO"
+  }
+ ],
+ "sync_on_migrate": 1
+}

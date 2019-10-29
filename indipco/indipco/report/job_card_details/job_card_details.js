@@ -4,6 +4,14 @@
 
 frappe.query_reports["Job Card Details"] = {
 	"filters": [
+		{
+			"fieldname":"work_order",
+			"label":("Work Order"),
+			"fieldtype":"Link",
+			"options":"Work Order",
+//			"default":"0",
+			"reqd": 1
+		}
 
 	]
 };
