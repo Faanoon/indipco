@@ -16,8 +16,8 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/indipco/css/indipco.css"
-include js, css files in header of desk.html
-app_include_css = "/assets/indipco/css/custom.css"
+#include js, css files in header of desk.html
+app_include_css = "/indipco/public/css/custom.css"
 # app_include_js = "/assets/indipco/js/indipco.js"
 
 # include js, css files in header of web template
