@@ -39,7 +39,7 @@ def get_data(filters):
 		A.ind_rejection,
 		IF(A.status="Completed", A.for_Quantity-A.ind_rejection,0),
 		A.total_time_in_mins,
-		A.status,
+		IF(A.docstatus="2","Cancelled",A.status),
 		B.status
 
 		FROM
@@ -48,6 +48,7 @@ def get_data(filters):
 
 		WHERE
 		A.work_order=B.name
+		&& A.docstatus!="2"
 		&& A.work_order = '%s'
 
 		ORDER BY A.name ASC """ %(work_order), as_list=1)
