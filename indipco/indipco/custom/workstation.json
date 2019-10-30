@@ -269,14 +269,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-10-06 23:09:19.444115",
+   "creation": "2019-10-30 17:18:09.225839",
    "default_value": null,
    "doc_type": "Workstation",
    "docstatus": 0,
    "doctype_or_field": "DocType",
    "field_name": null,
    "idx": 0,
-   "modified": "2019-10-06 23:09:19.444115",
+   "modified": "2019-10-30 17:18:09.225839",
    "modified_by": "Administrator",
    "name": "Workstation-sort_field",
    "owner": "Administrator",
@@ -285,7 +285,7 @@
    "parenttype": null,
    "property": "sort_field",
    "property_type": "Data",
-   "value": "indipco_workstation_stage"
+   "value": "taazur_workstation_stage"
   },
   {
    "_assign": null,

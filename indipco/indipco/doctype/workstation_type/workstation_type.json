@@ -28,7 +28,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Stage",
-   "options": "\nStage1\nStage2\nStage3\nStage4\nStage5\nStage6\nStage7\nStage8\nStage9\nStage10\nStage11\nStage12\nStage13\nStage14\nStage15",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15",
    "reqd": 1
   },
   {
@@ -43,7 +43,7 @@
    "options": "Company"
   }
  ],
- "modified": "2019-10-13 07:57:08.710613",
+ "modified": "2019-10-30 15:40:08.593889",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Workstation Type",

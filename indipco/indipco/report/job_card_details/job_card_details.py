@@ -14,8 +14,9 @@ def execute(filters=None):
 
 def get_columns():
 	return [
-		_("Wok Order") + ":Link/Work Order:140",
+
 		_("Job Card") + ":Link/Job Card:100",
+		_("Stage") + ":Int:60",
 		_("Operation") + ":Data:130",
 		_("For Quantity") + ":Float:100",
 		_("Transfered Qty") + ":Float:110",
@@ -31,8 +32,9 @@ def get_data(filters):
 		work_order=filters.get("work_order")
 	return frappe.db.sql("""
 		select
-		A.work_order,
+
 		A.name,
+		A.ind_stage,
 		A.operation,
 		A.for_Quantity,
 		A.transferred_qty,
@@ -51,4 +53,4 @@ def get_data(filters):
 		&& A.docstatus!="2"
 		&& A.work_order = '%s'
 
-		ORDER BY A.name ASC """ %(work_order), as_list=1)
+		ORDER BY A.ind_stage ASC """ %(work_order), as_list=1)
