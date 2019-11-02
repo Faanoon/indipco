@@ -1,12 +1,66 @@
 [
  {
-  "add_total_row": 0,
-  "color": null,
+  "add_total_row": 1,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": "Indipco",
+  "modified": "2019-10-27 14:28:33.283703",
+  "module": "indipco",
+  "name": "Quotation Analysis",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Quotation",
+  "reference_report": null,
+  "report_name": "Quotation Analysis",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Quotation Analysis",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Quotation Analysis",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "Quotation Analysis",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance Manager"
+   },
+   {
+    "parent": "Quotation Analysis",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "Quotation Analysis",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -22,6 +76,7 @@
   "ref_doctype": "Asset",
   "reference_report": null,
   "report_name": "Fixed Asset Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -40,12 +95,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -61,6 +114,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Purchase Order Items To Be Received or Billed1",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -91,12 +145,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -112,6 +164,7 @@
   "ref_doctype": "BOM",
   "reference_report": null,
   "report_name": "BOM Stock Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -130,12 +183,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -151,6 +202,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Work Order Stock Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -169,12 +221,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -190,17 +240,16 @@
   "ref_doctype": "Program Enrollment",
   "reference_report": null,
   "report_name": "Student and Guardian Contact Details",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -216,6 +265,7 @@
   "ref_doctype": "Lead",
   "reference_report": null,
   "report_name": "Prospects Engaged But Not Converted",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -240,12 +290,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -261,6 +309,7 @@
   "ref_doctype": "Lead",
   "reference_report": null,
   "report_name": "Campaign Efficiency",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -285,12 +334,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -306,6 +353,7 @@
   "ref_doctype": "Lead",
   "reference_report": null,
   "report_name": "Lead Owner Efficiency",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -330,12 +378,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -351,17 +397,16 @@
   "ref_doctype": "Assessment Result",
   "reference_report": null,
   "report_name": "Course wise Assessment Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -377,17 +422,16 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "GST Sales Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -403,17 +447,16 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "GST Purchase Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -429,17 +472,16 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "GST Itemised Sales Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -455,17 +497,16 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "GST Itemised Purchase Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -481,6 +522,7 @@
   "ref_doctype": "Stock Entry",
   "reference_report": null,
   "report_name": "Total Stock Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -511,12 +553,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -532,6 +572,7 @@
   "ref_doctype": "Issue",
   "reference_report": null,
   "report_name": "Support Hour Distribution",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -550,12 +591,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Asset Maintenance.modified\", \"add_totals_row\": 0, \"sort_order\": \"desc\", \"sort_by_next\": null, \"filters\": [], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"Asset Maintenance\"], [\"asset_name\", \"Asset Maintenance\"], [\"item_code\", \"Asset Maintenance\"], [\"maintenance_type\", \"Asset Maintenance Task\"], [\"maintenance_task\", \"Asset Maintenance Task\"], [\"description\", \"Asset Maintenance Task\"], [\"assign_to_name\", \"Asset Maintenance Task\"], [\"maintenance_status\", \"Asset Maintenance Task\"], [\"next_due_date\", \"Asset Maintenance Task\"], [\"last_completion_date\", \"Asset Maintenance Task\"]]}",
@@ -571,6 +610,7 @@
   "ref_doctype": "Asset Maintenance",
   "reference_report": null,
   "report_name": "Asset Maintenance",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -583,12 +623,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -604,6 +642,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Sales Payment Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -622,12 +661,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -643,17 +680,16 @@
   "ref_doctype": "Assessment Plan",
   "reference_report": null,
   "report_name": "Assessment Plan Status",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -669,6 +705,7 @@
   "ref_doctype": "Item",
   "reference_report": null,
   "report_name": "Item Variant Details",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -723,12 +760,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -744,6 +779,7 @@
   "ref_doctype": "Item",
   "reference_report": null,
   "report_name": "Item Price Stock",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -798,12 +834,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -819,6 +853,7 @@
   "ref_doctype": "Hotel Room Reservation",
   "reference_report": null,
   "report_name": "Hotel Room Occupancy",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -831,12 +866,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -852,6 +885,7 @@
   "ref_doctype": "Share Transfer",
   "reference_report": null,
   "report_name": "Share Ledger",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -870,12 +904,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -891,6 +923,7 @@
   "ref_doctype": "Share Transfer",
   "reference_report": null,
   "report_name": "Share Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -903,12 +936,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -924,6 +955,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "GSTR-1",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -948,12 +980,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -969,6 +999,7 @@
   "ref_doctype": "Delivery Note",
   "reference_report": null,
   "report_name": "Ordered Items To Be Delivered",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -999,12 +1030,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1020,17 +1049,16 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Fichier des Ecritures Comptables [FEC]",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1046,17 +1074,16 @@
   "ref_doctype": "Assessment Result",
   "reference_report": null,
   "report_name": "Final Assessment Grades",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1072,6 +1099,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "GSTR-2",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1096,12 +1124,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1117,6 +1143,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Warehouse wise Item Balance Age and Value",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1147,12 +1174,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1168,6 +1193,7 @@
   "ref_doctype": "Bin",
   "reference_report": null,
   "report_name": "Item Balance (Simple)",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -1192,12 +1218,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1213,6 +1237,7 @@
   "ref_doctype": "Employee Advance",
   "reference_report": null,
   "report_name": "Employee Advance Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1231,12 +1256,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1252,6 +1275,7 @@
   "ref_doctype": "Transaction Log",
   "reference_report": null,
   "report_name": "Transaction Log Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1270,12 +1294,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1291,6 +1313,7 @@
   "ref_doctype": "Account",
   "reference_report": null,
   "report_name": "Consolidated Financial Statement",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1327,12 +1350,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1348,6 +1369,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "HSN-wise-summary of outward supplies",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1372,12 +1394,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1393,6 +1413,7 @@
   "ref_doctype": "Employee",
   "reference_report": null,
   "report_name": "Department Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1417,12 +1438,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1438,6 +1457,7 @@
   "ref_doctype": "BOM",
   "reference_report": null,
   "report_name": "BOM Stock Calculated",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1456,12 +1476,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1477,6 +1495,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Customers Without Any Sales Transactions",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -1501,12 +1520,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1522,17 +1539,16 @@
   "ref_doctype": "Membership",
   "reference_report": null,
   "report_name": "Expiring Memberships",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1548,6 +1564,7 @@
   "ref_doctype": "Stock Entry",
   "reference_report": null,
   "report_name": "BOM Variance Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1578,12 +1595,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1599,6 +1614,7 @@
   "ref_doctype": "Address",
   "reference_report": null,
   "report_name": "Address And Contacts",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1629,12 +1645,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1650,6 +1664,7 @@
   "ref_doctype": "Daily Work Summary",
   "reference_report": null,
   "report_name": "Daily Work Summary Replies",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1668,12 +1683,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1689,6 +1702,7 @@
   "ref_doctype": "Delivery Note",
   "reference_report": null,
   "report_name": "Eway Bill",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1719,12 +1733,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1740,6 +1752,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "TDS Computation Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1770,12 +1783,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1791,6 +1802,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "TDS Payable Monthly",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1821,12 +1833,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1842,6 +1852,7 @@
   "ref_doctype": "Communication",
   "reference_report": null,
   "report_name": "Lead Conversion Time",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1860,12 +1871,10 @@
  },
  {
   "add_total_row": 0,
-  "color": "#c0392b",
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": "fa fa-star",
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1881,6 +1890,7 @@
   "ref_doctype": "Supplier",
   "reference_report": null,
   "report_name": "IRS 1099",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1899,12 +1909,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1920,6 +1928,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Person Commission Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1938,12 +1947,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -1959,6 +1966,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -1989,12 +1997,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2010,6 +2016,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Purchase Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2028,12 +2035,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2049,6 +2054,7 @@
   "ref_doctype": "Stock Entry",
   "reference_report": null,
   "report_name": "Stock Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2079,12 +2085,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2100,6 +2104,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Production Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2118,12 +2123,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2139,6 +2142,7 @@
   "ref_doctype": "Quality Action",
   "reference_report": null,
   "report_name": "Review",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -2151,12 +2155,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2172,6 +2174,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Pending SO Items For Purchase Request",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2208,12 +2211,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2229,6 +2230,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Trial Balance (Simple)",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -2253,12 +2255,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2274,6 +2274,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Customer Ledger Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2292,12 +2293,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2313,6 +2312,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Supplier Ledger Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2331,12 +2331,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"order_by\": \"`tabOpportunity`.`modified` desc\", \"filters\": [[\"Opportunity\", \"status\", \"=\", \"Lost\"]], \"fields\": [[\"name\", \"Opportunity\"], [\"opportunity_from\", \"Opportunity\"], [\"party_name\", \"Opportunity\"], [\"customer_name\", \"Opportunity\"], [\"opportunity_type\", \"Opportunity\"], [\"status\", \"Opportunity\"], [\"contact_by\", \"Opportunity\"], [\"docstatus\", \"Opportunity\"], [\"lost_reason\", \"Lost Reason Detail\"]], \"add_totals_row\": 0, \"add_total_row\": 0, \"page_length\": 20}",
@@ -2352,6 +2350,7 @@
   "ref_doctype": "Opportunity",
   "reference_report": null,
   "report_name": "Lost Opportunity",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -2370,12 +2369,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2391,17 +2388,16 @@
   "ref_doctype": "Bank Account",
   "reference_report": null,
   "report_name": "Account Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": "green",
   "disable_prepared_report": 0,
   "disabled": 1,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": "fa fa-file-code-o",
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2417,17 +2413,16 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Electronic Invoice Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2443,6 +2438,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Gross and Net Profit Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2467,12 +2463,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2488,6 +2482,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Product Bundle Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2500,12 +2495,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2521,6 +2514,7 @@
   "ref_doctype": "Timesheet",
   "reference_report": null,
   "report_name": "Employee Billing Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2557,12 +2551,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2578,6 +2570,7 @@
   "ref_doctype": "Timesheet",
   "reference_report": null,
   "report_name": "Project Billing Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2614,12 +2607,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2635,6 +2626,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Partner Commission Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2653,12 +2645,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2674,6 +2664,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Partner Transaction Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2710,12 +2701,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2731,6 +2720,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Partner Target Variance based on Item Group",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2767,12 +2757,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2788,6 +2776,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Person Target Variance Based On Item Group",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2824,12 +2813,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2845,6 +2832,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Territory Target Variance Based On Item Group",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2881,12 +2869,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2902,6 +2888,7 @@
   "ref_doctype": "Payroll Entry",
   "reference_report": null,
   "report_name": "Bank Remittance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2914,12 +2901,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2935,6 +2920,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Procurement Tracker",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2953,12 +2939,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -2974,6 +2958,7 @@
   "ref_doctype": "Loan",
   "reference_report": null,
   "report_name": "Loan Repayment",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -2992,12 +2977,10 @@
  },
  {
   "add_total_row": 0,
-  "color": "#4CB944",
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": "octicon octicon-repo-pull",
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3013,6 +2996,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "DATEV",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3037,12 +3021,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3058,6 +3040,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Inactive Sales Items",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3082,12 +3065,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3103,6 +3084,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Subcontracted Item To Be Received",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3127,12 +3109,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3148,6 +3128,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Subcontracted Raw Materials To Be Transferred",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3172,12 +3153,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3193,6 +3172,7 @@
   "ref_doctype": "BOM",
   "reference_report": null,
   "report_name": "BOM Explorer",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3211,12 +3191,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3232,6 +3210,7 @@
   "ref_doctype": "Customer",
   "reference_report": null,
   "report_name": "Customer-wise Item Price",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3280,12 +3259,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3301,6 +3278,7 @@
   "ref_doctype": "Delivery Note",
   "reference_report": null,
   "report_name": "Delayed Item Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3337,12 +3315,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3358,6 +3334,7 @@
   "ref_doctype": "Delivery Note",
   "reference_report": null,
   "report_name": "Delayed Order Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3394,12 +3371,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3415,6 +3390,7 @@
   "ref_doctype": "Employee",
   "reference_report": null,
   "report_name": "Employee Leave Balance Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3445,12 +3421,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3466,17 +3440,16 @@
   "ref_doctype": "Lab Test",
   "reference_report": null,
   "report_name": "Lab Test Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3492,17 +3465,16 @@
   "ref_doctype": "Maintenance Schedule",
   "reference_report": null,
   "report_name": "Maintenance Schedules",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3518,6 +3490,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Balance Sheet",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3542,12 +3515,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3563,6 +3534,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Profit and Loss Statement",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3587,12 +3559,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3608,6 +3578,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Trial Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3632,12 +3603,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3653,6 +3622,7 @@
   "ref_doctype": "Customer",
   "reference_report": null,
   "report_name": "Customer Credit Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3701,12 +3671,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3722,6 +3690,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Accounts Receivable Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3740,12 +3709,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3761,6 +3728,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Accounts Payable Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3791,12 +3759,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"DocShare.modified\", \"sort_order\": \"desc\", \"sort_by_next\": null, \"filters\": [], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"DocShare\"], [\"user\", \"DocShare\"], [\"share_doctype\", \"DocShare\"], [\"share_name\", \"DocShare\"], [\"read\", \"DocShare\"], [\"write\", \"DocShare\"], [\"share\", \"DocShare\"]]}",
@@ -3812,6 +3778,7 @@
   "ref_doctype": "DocShare",
   "reference_report": null,
   "report_name": "Document Share Report",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -3824,12 +3791,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3845,6 +3810,7 @@
   "ref_doctype": "BOM",
   "reference_report": null,
   "report_name": "BOM Search",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3863,12 +3829,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3884,6 +3848,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Trial Balance for Party",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3908,12 +3873,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3929,6 +3892,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Cash Flow",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -3953,12 +3917,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -3974,6 +3936,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Inactive Customers",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4010,12 +3973,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4031,6 +3992,7 @@
   "ref_doctype": "Asset",
   "reference_report": null,
   "report_name": "Asset Depreciation Ledger",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4043,12 +4005,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4064,6 +4024,7 @@
   "ref_doctype": "Asset",
   "reference_report": null,
   "report_name": "Asset Depreciations and Balances",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4076,12 +4037,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4097,6 +4056,7 @@
   "ref_doctype": "Issue",
   "reference_report": null,
   "report_name": "Minutes to First Response for Issues",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4109,12 +4069,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4130,6 +4088,7 @@
   "ref_doctype": "Opportunity",
   "reference_report": null,
   "report_name": "Minutes to First Response for Opportunity",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4148,12 +4107,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4169,6 +4126,7 @@
   "ref_doctype": "Timesheet",
   "reference_report": null,
   "report_name": "Daily Timesheet Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4199,12 +4157,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4220,6 +4176,7 @@
   "ref_doctype": "Attendance",
   "reference_report": null,
   "report_name": "Employees working on a holiday",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4244,12 +4201,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4265,6 +4220,7 @@
   "ref_doctype": "Supplier Quotation",
   "reference_report": null,
   "report_name": "Quoted Item Comparison",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4295,12 +4251,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4316,6 +4270,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "Profitability Analysis",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4340,12 +4295,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4361,6 +4314,7 @@
   "ref_doctype": "Vehicle",
   "reference_report": null,
   "report_name": "Vehicle Expenses",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4373,12 +4327,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4394,17 +4346,16 @@
   "ref_doctype": "Student Attendance",
   "reference_report": null,
   "report_name": "Student Batch-Wise Attendance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4420,6 +4371,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Batch Item Expiry Status",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4438,12 +4390,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4459,6 +4409,7 @@
   "ref_doctype": "Expense Claim",
   "reference_report": null,
   "report_name": "Unpaid Expense Claim",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4483,12 +4434,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4504,6 +4453,7 @@
   "ref_doctype": "Salary Slip",
   "reference_report": null,
   "report_name": "Salary Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4522,12 +4472,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4543,6 +4491,7 @@
   "ref_doctype": "Address",
   "reference_report": null,
   "report_name": "Addresses And Contacts",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4573,12 +4522,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Serial No.modified\", \"sort_order\": \"desc\", \"sort_by_next\": null, \"filters\": [[\"Serial No\", \"delivery_document_type\", \"in\", [\"Delivery Note\", \"Sales Invoice\"]], [\"Serial No\", \"warehouse\", \"=\", \"\"]], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"Serial No\"], [\"item_code\", \"Serial No\"], [\"amc_expiry_date\", \"Serial No\"], [\"maintenance_status\", \"Serial No\"], [\"delivery_document_no\", \"Serial No\"], [\"customer\", \"Serial No\"], [\"customer_name\", \"Serial No\"], [\"item_name\", \"Serial No\"], [\"description\", \"Serial No\"], [\"item_group\", \"Serial No\"], [\"brand\", \"Serial No\"]]}",
@@ -4594,6 +4541,7 @@
   "ref_doctype": "Serial No",
   "reference_report": null,
   "report_name": "Serial No Service Contract Expiry",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -4618,12 +4566,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Serial No.modified\", \"sort_order\": \"desc\", \"sort_by_next\": null, \"filters\": [[\"Serial No\", \"delivery_document_type\", \"in\", [\"Delivery Note\", \"Sales Invoice\"]], [\"Serial No\", \"warehouse\", \"=\", \"\"]], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"Serial No\"], [\"item_code\", \"Serial No\"], [\"warranty_expiry_date\", \"Serial No\"], [\"warranty_period\", \"Serial No\"], [\"maintenance_status\", \"Serial No\"], [\"purchase_document_no\", \"Serial No\"], [\"purchase_date\", \"Serial No\"], [\"supplier\", \"Serial No\"], [\"supplier_name\", \"Serial No\"], [\"delivery_document_no\", \"Serial No\"], [\"delivery_date\", \"Serial No\"], [\"customer\", \"Serial No\"], [\"customer_name\", \"Serial No\"], [\"item_name\", \"Serial No\"], [\"description\", \"Serial No\"], [\"item_group\", \"Serial No\"], [\"brand\", \"Serial No\"]]}",
@@ -4639,6 +4585,7 @@
   "ref_doctype": "Serial No",
   "reference_report": null,
   "report_name": "Serial No Warranty Expiry",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -4663,12 +4610,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4684,6 +4629,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Ordered Items To Be Billed",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4702,12 +4648,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4723,6 +4667,7 @@
   "ref_doctype": "Employee",
   "reference_report": null,
   "report_name": "Employee Leave Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4741,12 +4686,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4762,6 +4705,7 @@
   "ref_doctype": "Purchase Receipt",
   "reference_report": null,
   "report_name": "Purchase Order Items To Be Received",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -4792,12 +4736,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4813,6 +4755,7 @@
   "ref_doctype": "ToDo",
   "reference_report": null,
   "report_name": "ToDo",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4825,12 +4768,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4846,6 +4787,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Gross Profit",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4864,12 +4806,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4885,6 +4825,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Accounts Receivable",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4903,12 +4844,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4924,6 +4863,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Accounts Payable",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4954,12 +4894,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -4975,6 +4913,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Sales Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -4993,12 +4932,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5014,6 +4951,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Purchase Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5044,12 +4982,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5065,6 +5001,7 @@
   "ref_doctype": "Journal Entry",
   "reference_report": null,
   "report_name": "Bank Reconciliation Statement",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5089,12 +5026,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5110,6 +5045,7 @@
   "ref_doctype": "Journal Entry",
   "reference_report": null,
   "report_name": "Bank Clearance Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5134,12 +5070,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5155,6 +5089,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Person-wise Transaction Summary",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5191,12 +5126,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5212,6 +5145,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Item-wise Purchase History",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5236,12 +5170,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5257,6 +5189,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Issued Items Against Work Order",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5275,12 +5208,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5296,6 +5227,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Sales Partners Commission",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5314,12 +5246,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5335,6 +5265,7 @@
   "ref_doctype": "Employee",
   "reference_report": null,
   "report_name": "Employee Birthday",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5359,12 +5290,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Employee.bank_ac_no\", \"sort_order\": \"desc\", \"sort_by_next\": \"\", \"filters\": [], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"Employee\"], [\"employee_number\", \"Employee\"], [\"date_of_joining\", \"Employee\"], [\"branch\", \"Employee\"], [\"department\", \"Employee\"], [\"designation\", \"Employee\"], [\"gender\", \"Employee\"], [\"status\", \"Employee\"], [\"company\", \"Employee\"], [\"employment_type\", \"Employee\"], [\"reports_to\", \"Employee\"], [\"company_email\", \"Employee\"]]}",
@@ -5380,6 +5309,7 @@
   "ref_doctype": "Employee",
   "reference_report": null,
   "report_name": "Employee Information",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -5398,12 +5328,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5419,17 +5347,16 @@
   "ref_doctype": "Student Attendance",
   "reference_report": null,
   "report_name": "Student Monthly Attendance Sheet",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5445,17 +5372,16 @@
   "ref_doctype": "Student Attendance",
   "reference_report": null,
   "report_name": "Absent Student Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5471,6 +5397,7 @@
   "ref_doctype": "Attendance",
   "reference_report": null,
   "report_name": "Monthly Attendance Sheet",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5495,12 +5422,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5516,6 +5441,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Requested Items To Be Ordered",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5540,12 +5466,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5561,6 +5485,7 @@
   "ref_doctype": "Stock Entry",
   "reference_report": null,
   "report_name": "Requested Items To Be Transferred",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5591,12 +5516,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5612,6 +5535,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Item-wise Sales Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5630,12 +5554,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5651,6 +5573,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Item-wise Sales History",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -5687,12 +5610,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5708,6 +5629,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Purchase Order Items To Be Billed",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5738,12 +5660,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5759,6 +5679,7 @@
   "ref_doctype": "Project",
   "reference_report": null,
   "report_name": "Project wise Stock Tracking ",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5777,12 +5698,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5798,6 +5717,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Batch-Wise Balance History",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5816,12 +5736,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5837,6 +5755,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Item Prices",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5855,12 +5774,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5876,6 +5793,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Item-wise Purchase Register",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5906,12 +5824,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -5927,6 +5843,7 @@
   "ref_doctype": "Item",
   "reference_report": null,
   "report_name": "Itemwise Recommended Reorder Level",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -5981,12 +5898,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6002,6 +5917,7 @@
   "ref_doctype": "Quotation",
   "reference_report": null,
   "report_name": "Quotation Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6032,12 +5948,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6053,6 +5967,7 @@
   "ref_doctype": "Delivery Note",
   "reference_report": null,
   "report_name": "Delivery Note Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6083,12 +5998,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6104,6 +6017,7 @@
   "ref_doctype": "Sales Order",
   "reference_report": null,
   "report_name": "Sales Order Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6140,12 +6054,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6161,6 +6073,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Sales Invoice Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6179,12 +6092,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6200,6 +6111,7 @@
   "ref_doctype": "Purchase Order",
   "reference_report": null,
   "report_name": "Purchase Order Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6224,12 +6136,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6245,6 +6155,7 @@
   "ref_doctype": "Purchase Receipt",
   "reference_report": null,
   "report_name": "Purchase Receipt Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6275,12 +6186,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6296,6 +6205,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Purchase Invoice Trends",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6326,12 +6236,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6347,6 +6255,7 @@
   "ref_doctype": "Cost Center",
   "reference_report": null,
   "report_name": "Budget Variance Report",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6383,12 +6292,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6404,6 +6311,7 @@
   "ref_doctype": "Product Bundle",
   "reference_report": null,
   "report_name": "Available Stock for Packing Items",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6428,12 +6336,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6449,6 +6355,7 @@
   "ref_doctype": "Sales Invoice",
   "reference_report": null,
   "report_name": "Delivered Items To Be Billed",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6467,12 +6374,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6488,6 +6393,7 @@
   "ref_doctype": "Purchase Invoice",
   "reference_report": null,
   "report_name": "Received Items To Be Billed",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6518,12 +6424,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6539,6 +6443,7 @@
   "ref_doctype": "Material Request",
   "reference_report": null,
   "report_name": "Material Requests for which Supplier Quotations are not created",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6569,12 +6474,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6590,6 +6493,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Open Work Orders",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6608,12 +6512,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6629,6 +6531,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Work Orders in Progress",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6647,12 +6550,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6668,6 +6569,7 @@
   "ref_doctype": "Work Order",
   "reference_report": null,
   "report_name": "Completed Work Orders",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6686,12 +6588,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Bin.projected_qty\", \"sort_order\": \"asc\", \"sort_by_next\": \"\", \"filters\": [[\"Bin\", \"projected_qty\", \"<\", \"0\"]], \"sort_order_next\": \"desc\", \"columns\": [[\"warehouse\", \"Bin\"], [\"item_code\", \"Bin\"], [\"actual_qty\", \"Bin\"], [\"ordered_qty\", \"Bin\"], [\"planned_qty\", \"Bin\"], [\"reserved_qty\", \"Bin\"], [\"projected_qty\", \"Bin\"]]}",
@@ -6707,6 +6607,7 @@
   "ref_doctype": "Bin",
   "reference_report": null,
   "report_name": "Item Shortage Report",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6731,12 +6632,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6752,6 +6651,7 @@
   "ref_doctype": "Material Request",
   "reference_report": null,
   "report_name": "Items To Be Requested",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6782,12 +6682,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"fields\": [[\"name\", \"Item Price\"], [\"price_list\", \"Item Price\"], [\"currency\", \"Item Price\"], [\"item_code\", \"Item Price\"], [\"brand\", \"Item Price\"], [\"price_list_rate\", \"Item Price\"], [\"docstatus\", \"Item Price\"]], \"order_by\": \"`tabItem Price`.`modified` asc\", \"add_total_row\": 0, \"filters\": []}",
@@ -6803,6 +6701,7 @@
   "ref_doctype": "Item Price",
   "reference_report": null,
   "report_name": "Item-wise Price List Rate",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -6821,12 +6720,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6842,6 +6739,7 @@
   "ref_doctype": "Lead",
   "reference_report": null,
   "report_name": "Lead Details",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": [
    {
@@ -6866,12 +6764,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6887,6 +6783,7 @@
   "ref_doctype": "Customer",
   "reference_report": null,
   "report_name": "Customer Acquisition and Loyalty",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6935,12 +6832,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6956,6 +6851,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Supplier-Wise Sales Analytics",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -6974,12 +6870,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -6995,6 +6889,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Stock Ledger",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7013,12 +6908,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7034,6 +6927,7 @@
   "ref_doctype": "Journal Entry",
   "reference_report": null,
   "report_name": "Payment Period Based On Invoice Date",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7058,12 +6952,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7079,6 +6971,7 @@
   "ref_doctype": "Item",
   "reference_report": null,
   "report_name": "Stock Ageing",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7133,12 +7026,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7154,6 +7045,7 @@
   "ref_doctype": "Item",
   "reference_report": null,
   "report_name": "Stock Projected Qty",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7208,12 +7100,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7229,6 +7119,7 @@
   "ref_doctype": "GL Entry",
   "reference_report": null,
   "report_name": "General Ledger",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7253,12 +7144,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7274,6 +7163,7 @@
   "ref_doctype": "User",
   "reference_report": null,
   "report_name": "Permitted Documents For User",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7286,12 +7176,10 @@
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7307,17 +7195,16 @@
   "ref_doctype": "Fees",
   "reference_report": null,
   "report_name": "Student Fee Collection",
+  "report_script": null,
   "report_type": "Query Report",
   "roles": []
  },
  {
   "add_total_row": 0,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": "{\"add_total_row\": 0, \"sort_by\": \"Serial No.name\", \"sort_order\": \"desc\", \"sort_by_next\": null, \"filters\": [], \"sort_order_next\": \"desc\", \"columns\": [[\"name\", \"Serial No\"], [\"item_code\", \"Serial No\"], [\"warehouse\", \"Serial No\"], [\"item_name\", \"Serial No\"], [\"description\", \"Serial No\"], [\"item_group\", \"Serial No\"], [\"brand\", \"Serial No\"], [\"purchase_document_type\", \"Serial No\"], [\"purchase_document_no\", \"Serial No\"], [\"purchase_date\", \"Serial No\"], [\"customer\", \"Serial No\"], [\"customer_name\", \"Serial No\"], [\"purchase_rate\", \"Serial No\"], [\"delivery_document_type\", \"Serial No\"], [\"delivery_document_no\", \"Serial No\"], [\"delivery_date\", \"Serial No\"], [\"supplier\", \"Serial No\"], [\"supplier_name\", \"Serial No\"]]}",
@@ -7333,6 +7220,7 @@
   "ref_doctype": "Serial No",
   "reference_report": null,
   "report_name": "Serial No Status",
+  "report_script": null,
   "report_type": "Report Builder",
   "roles": [
    {
@@ -7357,12 +7245,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7378,6 +7264,7 @@
   "ref_doctype": "Job Card",
   "reference_report": null,
   "report_name": "Job Card Details",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7402,12 +7289,10 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
@@ -7423,6 +7308,7 @@
   "ref_doctype": "Task",
   "reference_report": null,
   "report_name": "Project Task List",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
@@ -7435,17 +7321,15 @@
  },
  {
   "add_total_row": 1,
-  "color": null,
   "disable_prepared_report": 0,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
-  "icon": null,
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
   "letter_head": null,
-  "modified": "2018-08-14 15:24:41.395557",
+  "modified": "2019-11-02 22:47:20.851758",
   "module": "Stock",
   "name": "Stock Balance",
   "parent": null,
@@ -7456,6 +7340,7 @@
   "ref_doctype": "Stock Ledger Entry",
   "reference_report": null,
   "report_name": "Stock Balance",
+  "report_script": null,
   "report_type": "Script Report",
   "roles": [
    {
