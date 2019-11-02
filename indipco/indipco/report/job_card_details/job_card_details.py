@@ -20,8 +20,9 @@ def get_columns():
 		_("Operation") + ":Data:130",
 		_("For Quantity") + ":Float:100",
 		_("Transfered Qty") + ":Float:110",
-		_("Rejection") + ":Float:75",
 		_("Completed Qty") + ":Float:110",
+		_("Rejection") + ":Float:75",
+		_("Accepted Qty") + ":Float:110",
 		_("Time Takes(min)") + ":Float:120",
 		_("JC Status") + ":Data:80",
 		_("WO Status") + ":Data:100"
@@ -38,8 +39,9 @@ def get_data(filters):
 		A.operation,
 		A.for_Quantity,
 		A.transferred_qty,
+		A.total_completed_qty,
 		A.ind_rejection,
-		IF(A.status="Completed", A.for_Quantity-A.ind_rejection,0),
+		IF(A.status="Completed", A.total_completed_qty-A.ind_rejection,0),
 		A.total_time_in_mins,
 		IF(A.docstatus="2","Cancelled",A.status),
 		B.status

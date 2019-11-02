@@ -16,7 +16,6 @@
    "description": "Ex: Melting Workstation, Annealing Workstation",
    "fieldname": "data_1",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Workstation Type",
    "reqd": 1,
    "unique": 1
@@ -43,7 +42,7 @@
    "options": "Company"
   }
  ],
- "modified": "2019-10-30 15:40:08.593889",
+ "modified": "2019-11-02 08:32:22.436447",
  "modified_by": "Administrator",
  "module": "indipco",
  "name": "Workstation Type",
