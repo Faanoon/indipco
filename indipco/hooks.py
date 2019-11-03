@@ -139,7 +139,6 @@ doc_events = {
 # }
 fixtures = ["Custom Field",
             "Custom Script",
-            "Property Setter",
             "Print Format",
             "Report",
             "Letter Head",
