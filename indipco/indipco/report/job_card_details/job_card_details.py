@@ -29,6 +29,7 @@ def get_columns():
 	]
 
 def get_data(filters):
+	
 	if filters.get("work_order"):
 		work_order=filters.get("work_order")
 	return frappe.db.sql("""
@@ -37,11 +38,11 @@ def get_data(filters):
 		A.name,
 		A.ind_stage,
 		A.operation,
-		A.for_Quantity,
-		A.transferred_qty,
-		A.total_completed_qty,
-		A.ind_rejection,
-		IF(A.status="Completed", A.total_completed_qty-A.ind_rejection,0),
+		sum(A.for_Quantity),
+		sum(A.transferred_qty),
+		sum(A.total_completed_qty),
+		sum(A.ind_rejection),
+		IF(A.status="Completed", sum(A.total_completed_qty)-sum(A.ind_rejection),0),
 		A.total_time_in_mins,
 		IF(A.docstatus="2","Cancelled",A.status),
 		B.status
@@ -55,4 +56,5 @@ def get_data(filters):
 		&& A.docstatus!="2"
 		&& A.work_order = '%s'
 
+		GROUP BY A.operation
 		ORDER BY A.ind_stage ASC """ %(work_order), as_list=1)

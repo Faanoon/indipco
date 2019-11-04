@@ -11,7 +11,14 @@ frappe.query_reports["Job Card Details"] = {
 			"options":"Work Order",
 //			"default":"0",
 			"reqd": 1
+		},
+		{
+		"fieldname":"details",
+		"label":("Details"),
+		"fieldtype":"Select",
+		"options":["Summary","More Details"],
+		"default":"Summary",
+		"reqd": 1
 		}
-
 	]
 };
