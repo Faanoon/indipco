@@ -9,7 +9,7 @@ frappe.query_reports["Job Card Details"] = {
 			"label":("Work Order"),
 			"fieldtype":"Link",
 			"options":"Work Order",
-//			"default":"0",
+			"default":"IND-WO-2019-00003",
 			"reqd": 1
 		},
 		{
