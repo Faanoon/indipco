@@ -36,6 +36,12 @@ def get_data():
               "is_query_report": True,
               "name": "Quotation Analysis",
               "doctype": "Quotation"
+            },
+            {
+              "type": "report",
+              "is_query_report": True,
+              "name": "Item Masters",
+              "doctype": "Item"
             }
 
         ]
