@@ -91,7 +91,12 @@ doc_events = {
 #	},
 #    "Stock Entry": {
 #                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
-	}
+	},
+
+    "Salary Slip": 
+    {
+#        "validate": "indipco.hooks_call.salary_slip.validate_absent_days"
+    }
 }
 #doc_events = {
 #	"Loan": {
