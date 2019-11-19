@@ -96,6 +96,11 @@ doc_events = {
     "Salary Slip": 
     {
 #        "validate": "indipco.hooks_call.salary_slip.validate_absent_days"
+    },
+
+        "Leave Allocation": 
+    {
+        "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
     }
 }
 #doc_events = {
