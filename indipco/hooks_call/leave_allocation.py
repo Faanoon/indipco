@@ -6,7 +6,10 @@ from frappe.utils import flt, getdate, rounded, date_diff, getdate
 
 #@frappe.whitelist(allow_guest=True)
 def calculate_days_to_allocate(self,method):
-    if self.from_date and self.to_date:
-        self.ind_days_to_allocate = date_diff(self.to_date, self.from_date) + 1
+    self.from_date=frappe.defaults.get_user_default("year_start_date")
+    self.to_date=frappe.defaults.get_user_default("year_end_date")
+    if date_diff(self.from_date, self.ind_date_of_joining)<0:
+        self.ind_days_to_allocate = date_diff(self.to_date, self.ind_date_of_joining)
         self.new_leaves_allocated = rounded(self.ind_days_to_allocate * self.ind_max_leaves_allowed / 365)
-#            frappe.throw(_("Purpose should be 1.Manufacture 2.Material Transfer for Manufacture"))
+    else:
+        self.new_leaves_allocated=self.ind_max_leaves_allowed

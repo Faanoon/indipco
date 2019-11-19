@@ -13,12 +13,10 @@ def duplicate_loan(self, method):
                 "loan_type" : "Personal Loan",
                 "name": ("!=", self.name)
             })
-        if self.loan_type=="Personal Loan":
+#       if self.loan_type=="Personal Loan":
 #            for d in self.repayment_schedule:
 #                if d.payment<=get_today():
 #                    if d.balance_loan_amount=="0":
 #                        frappe.throw(("You have not cleared previous loan"))
-                        today_date==self.posting_date+10
-                        frappe.throw(("You have not cleared previous loan", self.posting_date))
-#            msg = _("Article {0} {1} You have pending loan {2}")
+#                        frappe.throw(("You have not cleared previous loan", self.posting_date))
 

@@ -100,7 +100,8 @@ doc_events = {
 
         "Leave Allocation": 
     {
-        "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
+        #"validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
+        #"refresh": "indipco.hooks_call.leave_allocation.test"
     }
 }
 #doc_events = {
