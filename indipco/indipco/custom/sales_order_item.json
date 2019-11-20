@@ -217,14 +217,14 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
-   "creation": "2019-10-07 00:26:36.030660",
+   "creation": "2019-11-20 08:55:17.723828",
    "default_value": null,
    "doc_type": "Sales Order Item",
    "docstatus": 0,
    "doctype_or_field": "DocField",
    "field_name": "warehouse",
    "idx": 0,
-   "modified": "2019-10-07 00:26:36.030660",
+   "modified": "2019-11-20 08:55:17.723828",
    "modified_by": "Administrator",
    "name": "Sales Order Item-warehouse-default",
    "owner": "Administrator",
@@ -233,7 +233,7 @@
    "parenttype": null,
    "property": "default",
    "property_type": "Text",
-   "value": "Dispatch - INDIPCO"
+   "value": "Dispatch Warehouse - INDIPCO"
   },
   {
    "_assign": null,

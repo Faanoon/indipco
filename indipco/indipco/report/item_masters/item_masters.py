@@ -20,12 +20,12 @@ def get_columns(filters):
  if filters.get("details"):
   if filters.get("details")=="More Details":
     return [
-#      _("Process No") + ":Data:80",
+
       _("Item Code") + ":Link/Item:180",
       _("Item Name") + ":Data:270",
-#      _("ROLLON Code") + ":Data:130",
       _("Item Group") + ":Data:130",
       _("UOM") + ":Data:100",
+      _("Weight (Kg)") + ":Data:100",
       _("Created By") + ":Data:180"
    ]
   else:
@@ -45,9 +45,9 @@ def get_data(filters):
 
       A.name,
       A.item_name,
- 
       A.item_group,
       A.stock_uom,
+      A.weight_per_unit,
       A.owner
   
       FROM
@@ -63,9 +63,9 @@ def get_data(filters):
       
       A.name,
       A.item_name,
-      
       A.item_group,
       A.stock_uom,
+      A.weight_per_unit,
       A.owner
   
       FROM

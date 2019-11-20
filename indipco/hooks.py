@@ -81,28 +81,27 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 doc_events = {
- 	"Loan": {
- 		"validate": "indipco.hooks_call.loan.duplicate_loan"
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-	},
+ #	"Loan": {
+# 		"validate": "indipco.hooks_call.loan.duplicate_loan"
+#	},
  	"Material Request": {
                 "validate": "indipco.hooks_call.material_request.sales_user_validation"
-#	},
+	}
 #    "Stock Entry": {
 #                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
-	},
+#	},
 
-    "Salary Slip": 
-    {
+
+#    "Salary Slip": 
+#    {
 #        "validate": "indipco.hooks_call.salary_slip.validate_absent_days"
-    },
+#    },
 
-        "Leave Allocation": 
-    {
-        #"validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
-        #"refresh": "indipco.hooks_call.leave_allocation.test"
-    }
+#        "Leave Allocation": 
+ #   {
+ #       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
+ #       "refresh": "indipco.hooks_call.leave_allocation.test"
+ #   }
 }
 #doc_events = {
 #	"Loan": {
