@@ -10,6 +10,7 @@ def sales_user_validation(self,method):
     for d in self.get("items"):
             if (d.ind_item_group=="Finished Goods"):
                 self.material_request_type="Material Transfer"
+#                self.ind_test=frappe.get_roles(frappe.session.user)
 #                frappe.throw(_("You are allowed only for Finished Goods"))
 #            if (self.material_request_type=="Material Transfer"):      
 #        if (frappe.get_roles(frappe.session.user)!="Sales User"):
