@@ -5,10 +5,12 @@ from frappe.model.document import Document
 
 #@frappe.whitelist(allow_guest=True)
 def sales_user_validation(self,method):
-    if (self.ind_department!="Sales - INDIPCO"):
-        for d in self.get("items"):
-            if (d.item_code=="IND-RM-001"):
-                frappe.throw(_("You are allowed only for Finished Goods"))
+    self.ind_employee=frappe.session.user
+#    if (self.ind_department!="Sales - INDIPCO"):
+    for d in self.get("items"):
+            if (d.ind_item_group=="Finished Goods"):
+                self.material_request_type="Material Transfer"
+#                frappe.throw(_("You are allowed only for Finished Goods"))
 #            if (self.material_request_type=="Material Transfer"):      
 #        if (frappe.get_roles(frappe.session.user)!="Sales User"):
                
