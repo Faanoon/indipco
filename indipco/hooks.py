@@ -86,16 +86,16 @@ doc_events = {
 #	},
  	"Material Request": {
                 "validate": "indipco.hooks_call.material_request.sales_user_validation"
-	}
+	},
 #    "Stock Entry": {
 #                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
-#	},
+#	}
 
 
-#    "Salary Slip": 
-#    {
-#        "validate": "indipco.hooks_call.salary_slip.validate_absent_days"
-#    },
+    "Salary Slip": 
+    {
+        "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
+    }
 
 #        "Leave Allocation": 
  #   {

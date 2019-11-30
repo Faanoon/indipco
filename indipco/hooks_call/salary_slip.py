@@ -2,9 +2,11 @@ from __future__ import unicode_literals
 import frappe
 from frappe import _
 from frappe.model.document import Document
+from datetime import datetime
+from datetime import timedelta
 
 #@frappe.whitelist(allow_guest=True)
-def validate_absent_days(self,method):
-    if self.ind_absent_days!=0:
-        self.payment_days=self.ind_absent_days
-#            frappe.throw(_("Purpose should be 1.Manufacture 2.Material Transfer for Manufacture"))
+def validate_calculate_end_date(self,method):
+    self.total_working_days=30
+#    self.end_date=self.start_date+datetime.timedelta(days=30)
+#            frappe.throw(_("test"))
