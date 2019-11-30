@@ -11,5 +11,7 @@ def validate_calculate_end_date(self,method):
 #    self.payment_days=self.total_working_days-self.leave_without_pay
     if (self.ind_leave_without_pay_25_percent>self.leave_without_pay):
         frappe.throw(_("Leave without Pay 25 percent should be less than Leave Without Pay"))
-#    self.end_date=self.start_date+datetime.timedelta(days=30)
-#            frappe.throw(_("test"))
+
+    if (self.payroll_frequency=="Monthly" and self.total_working_days!=30):
+         frappe.throw(_("Working Days should be 30, Please change End Date"))
+
