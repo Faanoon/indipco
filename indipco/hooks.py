@@ -81,27 +81,35 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 doc_events = {
- #	"Loan": {
-# 		"validate": "indipco.hooks_call.loan.duplicate_loan"
-#	},
- 	"Material Request": {
-                "validate": "indipco.hooks_call.material_request.sales_user_validation"
-	},
-#    "Stock Entry": {
-#                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
-#	}
 
-
+ 	"Material Request": 
+    {
+        "validate": "indipco.hooks_call.material_request.sales_user_validation"
+    },
     "Salary Slip": 
     {
         "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
+#    },
+
+#    "Stock Entry": {
+#                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
+#	},
+
+# 	"Loan": {
+# 		"validate": "indipco.hooks_call.loan.duplicate_loan"
+#	},
+#        "Leave Allocation": 
+#   {
+#       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
+#       "refresh": "indipco.hooks_call.leave_allocation.test"
+#   },
+
+#        "Salary Structure Assignment": 
+#    {
+#        "validate": "indipco.hooks_call.salary_structure_assignment.calculate_service_days"
     }
 
-#        "Leave Allocation": 
- #   {
- #       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
- #       "refresh": "indipco.hooks_call.leave_allocation.test"
- #   }
+
 }
 #doc_events = {
 #	"Loan": {
