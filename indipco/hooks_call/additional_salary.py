@@ -64,4 +64,12 @@ def calculate_esb_settlement(self,method):
             elif self.ind_reason_for_esb_settlement=="Termination":
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_basic_salary
 
-#def recent_salary_structure(self,method):
+def last_salary_structure_assignment(self,method):
+    last_ssa = frappe.get_list("Salary Structure Assignment",
+			fields=["base"],
+			filters = {
+				"employee": self.employee,
+#				"transaction_date": ("<=", self.transaction_date),
+				"name": ("!=", self.name)
+			})
+    frappe.throw(_(last_ssa[0].base))
