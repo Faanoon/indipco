@@ -86,6 +86,14 @@ doc_events = {
     {
         "validate": "indipco.hooks_call.material_request.sales_user_validation"
     },
+
+ 	"Additional Salary": 
+    {
+        "validate": "indipco.hooks_call.additional_salary.validate_annual_leave_settlement",
+        "validate": "indipco.hooks_call.additional_salary.calculate_esb_settlement"
+
+    },
+
     "Salary Slip": 
     {
         "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
