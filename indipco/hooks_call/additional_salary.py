@@ -23,7 +23,7 @@ def calculate_esb_settlement(self,method):
             if self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years
 
-            if self.ind_reason_for_esb_settlement=="Termination":
+            elif self.ind_reason_for_esb_settlement=="Termination":
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_basic_salary
 
         elif (self.ind_service_period>729 and self.ind_service_period<1825):
@@ -31,10 +31,10 @@ def calculate_esb_settlement(self,method):
             if self.ind_reason_for_esb_settlement=="Resignation":
                 self.amount=self.ind_basic_salary*0.165*self.ind_service_years
 
-            if self.ind_reason_for_esb_settlement=="End of Contract":
+            elif self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years
 
-            if self.ind_reason_for_esb_settlement=="Termination":
+            elif self.ind_reason_for_esb_settlement=="Termination":
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_basic_salary
 
 
@@ -43,9 +43,9 @@ def calculate_esb_settlement(self,method):
             self.ind_service_years_after_5_years=self.ind_service_years-5
             if self.ind_reason_for_esb_settlement=="Resignation":
                 self.amount=self.ind_basic_salary*0.33*5+self.ind_basic_salary*0.67*self.ind_service_years_after_5_years
-
-
-            if self.ind_reason_for_esb_settlement=="End of Contract":
+            elif self.ind_reason_for_esb_settlement=="Termination":
+                self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_basic_salary
+            elif self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years
 
         elif (self.ind_service_period>3649):
