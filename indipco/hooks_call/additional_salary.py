@@ -63,6 +63,14 @@ def calculate_esb_settlement(self,method):
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years
             elif self.ind_reason_for_esb_settlement=="Termination":
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_basic_salary
+def calculate_overtime(self,method):
+    if self.salary_component=="Over Time":
+        self.ind_basic_salary_per_hour=self.ind_basic_salary/300
+        self.amount=self.ind_overtime_hours*self.ind_overtime_rate*self.ind_basic_salary_per_hour
+
+
+
+
 
 def last_salary_structure_assignment(self,method):
     last_ssa = frappe.get_list("Salary Structure Assignment",

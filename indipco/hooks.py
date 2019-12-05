@@ -90,7 +90,8 @@ doc_events = {
  	"Additional Salary": 
     {
         "validate": ["indipco.hooks_call.additional_salary.validate_annual_leave_settlement",
-                    "indipco.hooks_call.additional_salary.calculate_esb_settlement"
+                    "indipco.hooks_call.additional_salary.calculate_esb_settlement",
+                    "indipco.hooks_call.additional_salary.calculate_overtime"
 #                    "indipco.hooks_call.additional_salary.last_salary_structure_assignment"
                     ]
     },
