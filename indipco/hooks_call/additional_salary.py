@@ -9,13 +9,27 @@ from frappe.utils import flt, getdate, rounded, date_diff, getdate
 @frappe.whitelist(allow_guest=True)
 def validate_annual_leave_settlement(self,method):
     if self.salary_component=="Annual Leave settlement":
+        if (not self.ind_last_settlement_date or not self.ind_settlement_date or not self.ind_salary_structure_assignment):
+            frappe.throw(_("Select SSA, Settlement Date, Last Settlement Date"))
         self.overwrite_salary_structure_amount=1
-        self.ind_hra=self.ind_basic_salary*0.25
-        self.amount=self.ind_basic_salary+self.ind_hra
+        self.ind_service_period=date_diff(self.ind_settlement_date,self.ind_last_settlement_date)
+        self.ind_service_years=self.ind_service_period/360
+
+        self.amount=(self.ind_base+self.ind_hra)*self.ind_service_period/360*(self.ind_annual_earned_days/30)
+        last_ssa = frappe.get_list("Salary Structure Assignment",
+    	    fields=["from_date", "employee","name"],
+		    filters = {
+		        "employee": self.employee,
+                "name": ("<=",self.ind_salary_structure_assignment),
+		        "name": ("!=", self.name)
+            })
+#        self.ind_salary_structure_assignment=last_ssa[0].name
+
 
 @frappe.whitelist(allow_guest=True)
 def calculate_esb_settlement(self,method):
     if self.salary_component=="End of Service Benefits":
+        self.overwrite_salary_structure_amount=1
         self.ind_service_period=date_diff(self.ind_settlement_date,self.ind_joining_date)
         self.ind_service_years=self.ind_service_period/360
         if (not self.ind_settlement_date or not self.ind_reason_for_esb_settlement):
@@ -25,9 +39,8 @@ def calculate_esb_settlement(self,method):
             self.ind_esb_category="below 2 years"
             if self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years
-
             elif self.ind_reason_for_esb_settlement=="Termination":
-                self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_basic_salary
+                self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_base
             elif self.ind_reason_for_esb_settlement=="Resignation":
 #                self.amount=self.ind_basic_salary*0.50*self.ind_service_years
                 self.amount=self.ind_basic_salary*0
@@ -41,7 +54,7 @@ def calculate_esb_settlement(self,method):
                 self.amount=self.ind_basic_salary*0.50*self.ind_service_years
 
             elif self.ind_reason_for_esb_settlement=="Termination":
-                self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_basic_salary
+                self.amount=self.ind_basic_salary*0.50*self.ind_service_years+2*self.ind_base
 
 
         elif (self.ind_service_period>1824 and self.ind_service_period<3650):
@@ -50,7 +63,7 @@ def calculate_esb_settlement(self,method):
             if self.ind_reason_for_esb_settlement=="Resignation":
                 self.amount=self.ind_basic_salary*0.33*5+self.ind_basic_salary*0.667*self.ind_service_years_after_5_years
             elif self.ind_reason_for_esb_settlement=="Termination":
-                self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_basic_salary
+                self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_base
             elif self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years
 
@@ -62,22 +75,8 @@ def calculate_esb_settlement(self,method):
             elif self.ind_reason_for_esb_settlement=="End of Contract":
                 self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years
             elif self.ind_reason_for_esb_settlement=="Termination":
-                self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_basic_salary
+                self.amount=self.ind_basic_salary*0.50*5+self.ind_basic_salary*self.ind_service_years_after_5_years+2*self.ind_base
 def calculate_overtime(self,method):
     if self.salary_component=="Over Time":
-        self.ind_basic_salary_per_hour=self.ind_basic_salary/300
+        self.ind_basic_salary_per_hour=self.ind_base/300
         self.amount=self.ind_overtime_hours*self.ind_overtime_rate*self.ind_basic_salary_per_hour
-
-
-
-
-
-def last_salary_structure_assignment(self,method):
-    last_ssa = frappe.get_list("Salary Structure Assignment",
-			fields=["base"],
-			filters = {
-				"employee": self.employee,
-#				"transaction_date": ("<=", self.transaction_date),
-				"name": ("!=", self.name)
-			})
-    frappe.throw(_(last_ssa[0].base))

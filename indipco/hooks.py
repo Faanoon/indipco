@@ -87,19 +87,27 @@ doc_events = {
         "validate": "indipco.hooks_call.material_request.sales_user_validation"
     },
 
+ 	"Salary Structure Assignment": 
+    {
+        "validate": "indipco.hooks_call.salary_structure_assignment.calculate_gross_salary"
+#        "on_update": "indipco.hooks_call.salary_structure_assignment.calculate_gross_salary"
+    },
+
  	"Additional Salary": 
     {
-        "validate": ["indipco.hooks_call.additional_salary.validate_annual_leave_settlement",
+        "validate": [
+
+                    "indipco.hooks_call.additional_salary.validate_annual_leave_settlement",
                     "indipco.hooks_call.additional_salary.calculate_esb_settlement",
                     "indipco.hooks_call.additional_salary.calculate_overtime"
-#                    "indipco.hooks_call.additional_salary.last_salary_structure_assignment"
+
                     ]
     },
 
     "Salary Slip": 
     {
         "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
-#    },
+    }
 
 #    "Stock Entry": {
 #                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
@@ -113,12 +121,6 @@ doc_events = {
 #       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
 #       "refresh": "indipco.hooks_call.leave_allocation.test"
 #   },
-
-#        "Salary Structure Assignment": 
-#    {
-#        "validate": "indipco.hooks_call.salary_structure_assignment.calculate_service_days"
-    }
-
 
 }
 #doc_events = {
