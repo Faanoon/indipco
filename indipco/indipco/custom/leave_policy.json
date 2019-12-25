@@ -65,7 +65,7 @@
    "creation": "2019-12-06 21:14:38.161632",
    "default": null,
    "depends_on": null,
-   "description": "Leaves earned per year",
+   "description": "Applicable for\n      1. Casual Leave\n      2. Annual Leave(30)\n      3. Annual Leave(21)",
    "docstatus": 0,
    "dt": "Leave Policy",
    "fetch_from": null,
