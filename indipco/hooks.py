@@ -89,7 +89,7 @@ doc_events = {
 
  	"Salary Structure Assignment": 
     {
-        "validate": "indipco.hooks_call.salary_structure_assignment.calculate_gross_salary"
+        "onload": "indipco.hooks_call.salary_structure_assignment.calculate_gross_salary"
 #        "on_update": "indipco.hooks_call.salary_structure_assignment.calculate_gross_salary"
     },
 
