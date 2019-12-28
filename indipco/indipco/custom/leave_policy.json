@@ -107,6 +107,30 @@
  ],
  "custom_perms": [],
  "doctype": "Leave Policy",
- "property_setters": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2019-12-28 16:21:00.910963",
+   "default_value": null,
+   "doc_type": "Leave Policy",
+   "docstatus": 0,
+   "doctype_or_field": "DocType",
+   "field_name": null,
+   "idx": 0,
+   "modified": "2019-12-28 16:21:00.910963",
+   "modified_by": "Administrator",
+   "name": "Leave Policy-default_print_format",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "default_print_format",
+   "property_type": "Data",
+   "value": "PF Leave Policy"
+  }
+ ],
  "sync_on_migrate": 1
 }
