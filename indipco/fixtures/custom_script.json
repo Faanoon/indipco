@@ -20,5 +20,16 @@
   "parentfield": null,
   "parenttype": null,
   "script": "frappe.ui.form.on('Material Request', {\n\trefresh(frm) {\n\t\t// your code here\n\t\t\n\n\n\t}\n})\n\nfrappe.ui.form.on('Material Request Item', {\n\trefresh(frm) {\n\t\t// your code here\n//\t\tif (frm.doc.material_request_type!=\"Material Transfer\" && )\n\t\t\n\t}\n})"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Additional Salary",
+  "modified": "2020-01-07 14:05:32.913180",
+  "name": "Additional Salary-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Additional Salary', {\n\tsetup(frm) {\n\t\t// your code here\n\t\tcur_frm.set_query(\"ind_salary_structure_assignment\", function(doc) {\n\t\t    return {\n\t\t        filters: {\n\t\t            \"employee\": cur_frm.doc.employee\n\t\t        }\n\t\t    };\n\t\t}\n\t\t);\n\t\t\n\t}\n})\n// ind_salary_structure_assignment=ssa[0]"
  }
 ]

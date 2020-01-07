@@ -934,5 +934,31 @@
   "raw_printing": 0,
   "show_section_headings": 0,
   "standard": "Yes"
+ },
+ {
+  "align_labels_right": 0,
+  "css": null,
+  "custom_format": 0,
+  "default_print_language": null,
+  "disabled": 0,
+  "doc_type": "Leave Policy",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2>Leave Policy<br><small>{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"_custom_html\", \"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldtype\": \"HTML\", \"options\": \"<pre>\\nLeave Policy Type    : {{doc.ind_leave_policy_type}}\\nAnnual Leaves Earned : {{doc.ind_als_earned}}\\n</pre>\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Leave Allocations\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"leave_policy_details\", \"print_hide\": 0, \"label\": \"Leave Policy Details\", \"visible_columns\": [{\"fieldname\": \"leave_type\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"annual_allocation\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"ind_carry_forward\", \"print_width\": \"\", \"print_hide\": 0}]}]",
+  "html": null,
+  "line_breaks": 0,
+  "modified": "2019-12-28 16:29:53.208675",
+  "module": "HR",
+  "name": "PF Leave Policy",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 1,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 0,
+  "standard": "No"
  }
 ]
