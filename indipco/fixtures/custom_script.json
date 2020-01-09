@@ -25,11 +25,11 @@
   "docstatus": 0,
   "doctype": "Custom Script",
   "dt": "Additional Salary",
-  "modified": "2020-01-07 14:05:32.913180",
+  "modified": "2020-01-09 21:39:43.701003",
   "name": "Additional Salary-Client",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Additional Salary', {\n\tsetup(frm) {\n\t\t// your code here\n\t\tcur_frm.set_query(\"ind_salary_structure_assignment\", function(doc) {\n\t\t    return {\n\t\t        filters: {\n\t\t            \"employee\": cur_frm.doc.employee\n\t\t        }\n\t\t    };\n\t\t}\n\t\t);\n\t\t\n\t}\n})\n// ind_salary_structure_assignment=ssa[0]"
+  "script": "frappe.ui.form.on('Additional Salary', {\n\tsetup(frm) {\n\t\t// your code here\n\t\tcur_frm.set_query(\"ind_salary_structure_assignment\", function(doc) {\n\t\t    return {\n\t\t        filters: {\n\t\t            \"employee\": cur_frm.doc.employee\n\t\t        }\n\t\t    };\n\t\t}\n\t\t);\n\t\t\n\t},\n\temployee(frm){\n\t\t    //this will fetch and set the most recent assignment.\n        frappe.db.get_link_options('Salary Structure Assignment', '',\n            {\n\t\t\t\temployee: cur_frm.doc.employee\n\t\t\t}\n\t\t).then(all_ssa =>{\n\t\t    frm.set_value(\"ind_salary_structure_assignment\", all_ssa[0].value);\n\t\t});\n\t}\t\n\t\n});\n"
  }
 ]
