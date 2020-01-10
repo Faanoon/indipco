@@ -176,6 +176,5 @@ fixtures = ["Custom Field",
             "Report",
             "Letter Head",
             "Workflow",
-            "Workflow State",
-            "Workflow Action"
+            "Workflow State"
             ]
