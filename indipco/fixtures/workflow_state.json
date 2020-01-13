@@ -118,5 +118,17 @@
   "parenttype": null,
   "style": "Info",
   "workflow_state_name": "Approved By Sales"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2020-01-12 16:07:20.456253",
+  "name": "Approved By HOD",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "style": "Info",
+  "workflow_state_name": "Approved By HOD"
  }
 ]
