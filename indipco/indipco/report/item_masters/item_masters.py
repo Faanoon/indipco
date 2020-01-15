@@ -26,6 +26,8 @@ def get_columns(filters):
       _("Item Group") + ":Data:130",
       _("UOM") + ":Data:100",
       _("Weight (Kg)") + ":Data:100",
+      _("Profit/Loss Account") + ":Data:140",
+      _("Cost Center") + ":Data:140",
       _("Created By") + ":Data:180"
    ]
   else:
@@ -48,13 +50,17 @@ def get_data(filters):
       A.item_group,
       A.stock_uom,
       A.weight_per_unit,
+      B.income_account,
+      B.selling_cost_center,
       A.owner
   
       FROM
-      `tabItem` AS A
+      `tabItem` AS A,
+      `tabItem Default` AS B
   
       WHERE
       A.item_group = '%s'
+      AND A.name = B.parent
       ORDER BY A.item_code DESC """ %(item_group), as_list=1)
 
     else:
@@ -66,10 +72,16 @@ def get_data(filters):
       A.item_group,
       A.stock_uom,
       A.weight_per_unit,
+      B.income_account,
+      B.selling_cost_center,
       A.owner
   
       FROM
-      `tabItem` AS A
+      `tabItem` AS A,
+      `tabItem Default` AS B
+      WHERE
+      A.name = B.parent
+
       ORDER BY A.item_code DESC """ ) 
   else:
     return frappe.db.sql("""
