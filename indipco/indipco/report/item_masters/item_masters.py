@@ -26,8 +26,10 @@ def get_columns(filters):
       _("Item Group") + ":Data:130",
       _("UOM") + ":Data:100",
       _("Weight (Kg)") + ":Data:100",
-      _("Profit/Loss Account") + ":Data:140",
-      _("Cost Center") + ":Data:140",
+      _("Income Account") + ":Data:140",
+      _("Income Cost Center") + ":Data:140",
+      _("Expense Account") + ":Data:140",
+      _("Expense Cost Center") + ":Data:140",
       _("Created By") + ":Data:180"
    ]
   else:
@@ -52,6 +54,8 @@ def get_data(filters):
       A.weight_per_unit,
       B.income_account,
       B.selling_cost_center,
+      B.expense_account,
+      B.buying_cost_center,
       A.owner
   
       FROM
@@ -74,6 +78,8 @@ def get_data(filters):
       A.weight_per_unit,
       B.income_account,
       B.selling_cost_center,
+      B.expense_account,
+      B.buying_cost_center,
       A.owner
   
       FROM
