@@ -107,15 +107,16 @@ doc_events = {
     "Salary Slip": 
     {
         "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
-    }
+    },
 
 #    "Stock Entry": {
 #                "validate": "indipco.hooks_call.stock_entry.validate_purpose_manufacture"
 #	},
 
-# 	"Loan": {
-# 		"validate": "indipco.hooks_call.loan.duplicate_loan"
-#	},
+ 	"Loan": 
+    {
+ 		"validate": "indipco.hooks_call.loan.duplicate_loan"
+	}
 #        "Leave Allocation": 
 #   {
 #       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
