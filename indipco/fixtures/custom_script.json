@@ -31,5 +31,16 @@
   "parentfield": null,
   "parenttype": null,
   "script": "frappe.ui.form.on('Additional Salary', {\n\tsetup(frm) {\n\t\t// your code here\n\t\tcur_frm.set_query(\"ind_salary_structure_assignment\", function(doc) {\n\t\t    return {\n\t\t        filters: {\n\t\t            \"employee\": cur_frm.doc.employee\n\t\t        }\n\t\t    };\n\t\t}\n\t\t);\n\t\t\n\t},\n\temployee(frm){\n\t\t    //this will fetch and set the most recent assignment.\n        frappe.db.get_link_options('Salary Structure Assignment', '',\n            {\n\t\t\t\temployee: cur_frm.doc.employee\n\t\t\t}\n\t\t).then(all_ssa =>{\n\t\t    frm.set_value(\"ind_salary_structure_assignment\", all_ssa[0].value);\n\t\t});\n\t}\t\n\t\n});\n"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Stock Entry",
+  "modified": "2020-02-04 00:54:54.696000",
+  "name": "Stock Entry-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Stock Entry', {\n\tvalidate(frm) {\n\t\t// your code here\n\t\tfrm.doc.ind_furnace_total_capacity=10000*frm.doc.ind_running_furnaces;\n\t\tif (frm.doc.ind_item_group_for_melting_process==\"Molten Metal\" && frm.doc.from_bom && frm.doc.fg_completed_qty>frm.doc.ind_furnace_total_capacity)\n\t\t{\n\t\t    msgprint(\"For Quantity should be less than Furnace Total Capacity\");\n\t\t    validated = false;\n\t\t}\n\t\t\n\t\t\n\t}\n});\n\nfrappe.ui.form.on('Stock Entry Detail', {\n\tvalidate(frm) {\n\t\tif (frm.doc.item_group==\"Molten Metal\"){\n\t\t    frm.doc.ind_workstation=\"Melting Furnace\";\n\t\t}\n\t}\n});"
  }
 ]
