@@ -8,6 +8,82 @@
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
+  "letter_head": "",
+  "modified": "2020-01-09 14:42:45.254751",
+  "module": "Stock",
+  "name": "Stock and Account Value Comparison",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "reference_report": null,
+  "report_name": "Stock and Account Value Comparison",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Stock and Account Value Comparison",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Stock and Account Value Comparison",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "[{\"label\":\"Asset\",\"fieldname\":\"asset\",\"fieldtype\":\"Link\",\"options\":\"Asset\",\"width\":120,\"id\":\"asset\",\"name\":\"Asset\",\"editable\":false,\"compareValue\":null},{\"fieldname\":\"asset_name\",\"fieldtype\":\"Data\",\"label\":\"Asset Name\",\"link_field\":\"asset\",\"doctype\":\"Asset\",\"width\":100,\"id\":\"asset_name\",\"name\":\"Asset Name\",\"editable\":false,\"compareValue\":null},{\"label\":\"Depreciation Date\",\"fieldname\":\"depreciation_date\",\"fieldtype\":\"Date\",\"width\":120,\"id\":\"depreciation_date\",\"name\":\"Depreciation Date\",\"editable\":false},{\"label\":\"Purchase Amount\",\"fieldname\":\"gross_purchase_amount\",\"fieldtype\":\"Currency\",\"width\":120,\"id\":\"gross_purchase_amount\",\"name\":\"Purchase Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Depreciation Amount\",\"fieldname\":\"depreciation_amount\",\"fieldtype\":\"Currency\",\"width\":140,\"id\":\"depreciation_amount\",\"name\":\"Depreciation Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Accumulated Depreciation Amount\",\"fieldname\":\"accumulated_depreciation_amount\",\"fieldtype\":\"Currency\",\"width\":210,\"id\":\"accumulated_depreciation_amount\",\"name\":\"Accumulated Depreciation Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Amount After Depreciation\",\"fieldname\":\"amount_after_depreciation\",\"fieldtype\":\"Currency\",\"width\":180,\"id\":\"amount_after_depreciation\",\"name\":\"Amount After Depreciation\",\"editable\":false,\"compareValue\":null},{\"label\":\"Depreciation Entry\",\"fieldname\":\"depreciation_entry\",\"fieldtype\":\"Link\",\"options\":\"Journal Entry\",\"width\":140,\"id\":\"depreciation_entry\",\"name\":\"Depreciation Entry\",\"editable\":false,\"compareValue\":null},{\"label\":\"Asset Category\",\"fieldname\":\"asset_category\",\"fieldtype\":\"Link\",\"options\":\"Asset Category\",\"width\":120,\"id\":\"asset_category\",\"name\":\"Asset Category\",\"editable\":false,\"compareValue\":null},{\"label\":\"Current Status\",\"fieldname\":\"status\",\"fieldtype\":\"Data\",\"width\":120,\"id\":\"status\",\"name\":\"Current Status\",\"editable\":false,\"compareValue\":null},{\"label\":\"Depreciation Method\",\"fieldname\":\"depreciation_method\",\"fieldtype\":\"Data\",\"width\":130,\"id\":\"depreciation_method\",\"name\":\"Depreciation Method\",\"editable\":false,\"compareValue\":null},{\"label\":\"Purchase Date\",\"fieldname\":\"purchase_date\",\"fieldtype\":\"Date\",\"width\":120,\"id\":\"purchase_date\",\"name\":\"Purchase Date\",\"editable\":false}]",
+  "letter_head": "Indipco",
+  "modified": "2020-04-24 17:22:09.050720",
+  "module": "indipco",
+  "name": "Asset Depreciation Ledger Summary",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT\n\nA.asset_category as \"Asset Category:Link/Asset Category:220\",\nA.name as \"Asset:Link/Asset:140\",\nA.purchase_date as \"Purchase Date:Date:130\",\nA.gross_purchase_amount as \"Purchase Amount(PA):Float:150\",\nA.opening_accumulated_depreciation as \"Opening Accu Depn(OA):Float:160\",\nsum(B.depreciation_amount) as \"Accu Depn Amount(AD):Float:160\",\n(A.gross_purchase_amount-A.opening_accumulated_depreciation-sum(B.depreciation_amount)) as \"Book Value(PA-OA-AD):Float:180\"\n\nFROM\n`tabAsset` as A,\n`tabDepreciation Schedule` as B\n\nWHERE\nA.name=B.parent \n&& A.docstatus=1\n&& B.schedule_date BETWEEN 20190101 and 20191212\n/* && B.schedule_date<=CURDATE() */\n\nGROUP BY A.name\nORDER BY A.asset_category ASC, A.name ASC,B.schedule_date ASC\n",
+  "ref_doctype": "Asset",
+  "reference_report": "Asset Depreciation Ledger",
+  "report_name": "Asset Depreciation Ledger Summary",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Asset Depreciation Ledger Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Quality Manager"
+   },
+   {
+    "parent": "Asset Depreciation Ledger Summary",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
   "letter_head": "Indipco",
   "modified": "2019-11-14 07:34:30.482840",
   "module": "indipco",
