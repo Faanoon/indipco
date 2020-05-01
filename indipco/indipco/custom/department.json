@@ -5,6 +5,7 @@
    "_comments": null,
    "_liked_by": null,
    "_user_tags": null,
+   "allow_in_quick_entry": 0,
    "allow_on_submit": 0,
    "bold": 0,
    "collapsible": 0,
@@ -61,7 +62,7 @@
    "_user_tags": null,
    "amend": 0,
    "cancel": 0,
-   "create": 1,
+   "create": 0,
    "creation": "2013-02-05 11:48:26",
    "delete": 0,
    "docstatus": 0,
@@ -85,7 +86,7 @@
    "set_user_permissions": 0,
    "share": 1,
    "submit": 0,
-   "write": 1
+   "write": 0
   },
   {
    "_assign": null,
@@ -94,7 +95,7 @@
    "_user_tags": null,
    "amend": 0,
    "cancel": 0,
-   "create": 1,
+   "create": 0,
    "creation": "2013-02-05 11:48:26",
    "delete": 0,
    "docstatus": 0,
@@ -118,7 +119,7 @@
    "set_user_permissions": 0,
    "share": 1,
    "submit": 0,
-   "write": 1
+   "write": 0
   },
   {
    "_assign": null,
@@ -129,7 +130,7 @@
    "cancel": 0,
    "create": 1,
    "creation": "2013-02-05 11:48:26",
-   "delete": 1,
+   "delete": 0,
    "docstatus": 0,
    "email": 1,
    "export": 1,
