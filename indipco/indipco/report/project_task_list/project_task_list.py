@@ -14,15 +14,15 @@ def execute(filters=None):
 
 def get_columns():
 	return [
-		_("Task Name") + ":Data:300",
-		_("Task ID") + ":Link/Task:80",
+		_("Task Name") + ":Data:330",
+		_("Task ID") + ":Link/Task:150",
 		_("Weight") + ":Float:80",
 		_("Progress%") + ":Float:100",
 		_("Overall%") + ":Float:100",
 		_("Start Date") + ":Date:100",
 		_("End Date") + ":Date:100",
 		_("Status") + ":Data:100",
-		_("Project") + ":Data:150"
+		_("Project") + ":Data:180"
 	]
 
 def get_data():
