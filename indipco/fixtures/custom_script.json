@@ -58,11 +58,22 @@
   "docstatus": 0,
   "doctype": "Custom Script",
   "dt": "Stock Entry",
-  "modified": "2020-02-04 00:54:54.696000",
+  "modified": "2020-06-02 22:14:25.573377",
   "name": "Stock Entry-Client",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
   "script": "frappe.ui.form.on('Stock Entry', {\n\tvalidate(frm) {\n\t\t// your code here\n\t\tfrm.doc.ind_furnace_total_capacity=10000*frm.doc.ind_running_furnaces;\n\t\tif (frm.doc.ind_item_group_for_melting_process==\"Molten Metal\" && frm.doc.from_bom && frm.doc.fg_completed_qty>frm.doc.ind_furnace_total_capacity)\n\t\t{\n\t\t    msgprint(\"For Quantity should be less than Furnace Total Capacity\");\n\t\t    validated = false;\n\t\t}\n\t\t\n\t\t\n\t}\n});\n\nfrappe.ui.form.on('Stock Entry Detail', {\n\tvalidate(frm) {\n\t\tif (frm.doc.item_group==\"Molten Metal\"){\n\t\t    frm.doc.ind_workstation=\"Melting Furnace\";\n\t\t}\n\t}\n});"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Work Order",
+  "modified": "2020-06-02 23:53:12.584450",
+  "name": "Work Order-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Work Order', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tif(frm.doc.ind_routing==\"Melting\"){\n\t\t    frm.doc.fg_warehouse=\"Magnesium Treatment - INDIPCO\";\n\t\t    frm.doc.wip_warehouse=\"Melting - INDIPCO\";\n\t\t}\n\t\t\n\t\t\n\t\t\n\t\t\n\t}\n});"
  }
 ]

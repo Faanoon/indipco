@@ -1,6 +1,5 @@
 [
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -46,7 +45,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -92,7 +90,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -138,7 +135,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -184,7 +180,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -230,7 +225,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -276,7 +270,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -322,53 +315,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
-  "allow_on_submit": 1,
-  "bold": 0,
-  "collapsible": 0,
-  "collapsible_depends_on": null,
-  "columns": 0,
-  "default": null,
-  "depends_on": null,
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Custom Field",
-  "dt": "Material Request",
-  "fetch_from": null,
-  "fetch_if_empty": 0,
-  "fieldname": "workflow_state",
-  "fieldtype": "Link",
-  "hidden": 1,
-  "ignore_user_permissions": 0,
-  "ignore_xss_filter": 0,
-  "in_global_search": 0,
-  "in_list_view": 0,
-  "in_standard_filter": 0,
-  "insert_after": null,
-  "label": "Workflow State",
-  "length": 0,
-  "modified": "2020-01-19 07:55:35.961038",
-  "name": "Material Request-workflow_state",
-  "no_copy": 1,
-  "options": "Workflow State",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "permlevel": 0,
-  "precision": "",
-  "print_hide": 0,
-  "print_hide_if_no_value": 0,
-  "print_width": null,
-  "read_only": 0,
-  "report_hide": 0,
-  "reqd": 0,
-  "search_index": 0,
-  "translatable": 0,
-  "unique": 0,
-  "width": null
- },
- {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -414,7 +360,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -460,7 +405,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -506,7 +450,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -552,7 +495,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -598,7 +540,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -644,7 +585,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -690,7 +630,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -736,7 +675,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -782,7 +720,51 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
+  "allow_on_submit": 1,
+  "bold": 0,
+  "collapsible": 0,
+  "collapsible_depends_on": null,
+  "columns": 0,
+  "default": null,
+  "depends_on": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Custom Field",
+  "dt": "Material Request",
+  "fetch_from": null,
+  "fetch_if_empty": 0,
+  "fieldname": "workflow_state",
+  "fieldtype": "Link",
+  "hidden": 1,
+  "ignore_user_permissions": 0,
+  "ignore_xss_filter": 0,
+  "in_global_search": 0,
+  "in_list_view": 0,
+  "in_standard_filter": 0,
+  "insert_after": null,
+  "label": "Workflow State",
+  "length": 0,
+  "modified": "2020-01-19 07:55:35.961038",
+  "name": "Material Request-workflow_state",
+  "no_copy": 1,
+  "options": "Workflow State",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "permlevel": 0,
+  "precision": "",
+  "print_hide": 0,
+  "print_hide_if_no_value": 0,
+  "print_width": null,
+  "read_only": 0,
+  "report_hide": 0,
+  "reqd": 0,
+  "search_index": 0,
+  "translatable": 0,
+  "unique": 0,
+  "width": null
+ },
+ {
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -828,7 +810,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -874,7 +855,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -920,7 +900,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -966,7 +945,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1012,7 +990,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1058,7 +1035,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1104,7 +1080,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1150,7 +1125,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1196,7 +1170,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1242,7 +1215,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1288,7 +1260,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1334,7 +1305,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1380,7 +1350,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1426,7 +1395,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -1472,7 +1440,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1518,53 +1485,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
-  "allow_on_submit": 0,
-  "bold": 0,
-  "collapsible": 0,
-  "collapsible_depends_on": null,
-  "columns": 0,
-  "default": null,
-  "depends_on": null,
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Custom Field",
-  "dt": "BOM",
-  "fetch_from": "item.item_group",
-  "fetch_if_empty": 0,
-  "fieldname": "ind_item_group",
-  "fieldtype": "Read Only",
-  "hidden": 0,
-  "ignore_user_permissions": 0,
-  "ignore_xss_filter": 0,
-  "in_global_search": 0,
-  "in_list_view": 0,
-  "in_standard_filter": 0,
-  "insert_after": "set_rate_of_sub_assembly_item_based_on_bom",
-  "label": "Item Group",
-  "length": 0,
-  "modified": "2020-02-03 22:43:04.189192",
-  "name": "BOM-ind_item_group",
-  "no_copy": 0,
-  "options": null,
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "permlevel": 0,
-  "precision": "",
-  "print_hide": 0,
-  "print_hide_if_no_value": 0,
-  "print_width": null,
-  "read_only": 0,
-  "report_hide": 0,
-  "reqd": 0,
-  "search_index": 0,
-  "translatable": 0,
-  "unique": 0,
-  "width": null
- },
- {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1610,7 +1530,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1656,7 +1575,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1702,7 +1620,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1748,7 +1665,51 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
+  "allow_on_submit": 0,
+  "bold": 0,
+  "collapsible": 0,
+  "collapsible_depends_on": null,
+  "columns": 0,
+  "default": null,
+  "depends_on": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Custom Field",
+  "dt": "BOM",
+  "fetch_from": "item.item_group",
+  "fetch_if_empty": 0,
+  "fieldname": "ind_item_group",
+  "fieldtype": "Read Only",
+  "hidden": 0,
+  "ignore_user_permissions": 0,
+  "ignore_xss_filter": 0,
+  "in_global_search": 0,
+  "in_list_view": 0,
+  "in_standard_filter": 0,
+  "insert_after": "set_rate_of_sub_assembly_item_based_on_bom",
+  "label": "Item Group",
+  "length": 0,
+  "modified": "2020-02-03 22:43:04.189192",
+  "name": "BOM-ind_item_group",
+  "no_copy": 0,
+  "options": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "permlevel": 0,
+  "precision": "",
+  "print_hide": 0,
+  "print_hide_if_no_value": 0,
+  "print_width": null,
+  "read_only": 0,
+  "report_hide": 0,
+  "reqd": 0,
+  "search_index": 0,
+  "translatable": 0,
+  "unique": 0,
+  "width": null
+ },
+ {
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1794,7 +1755,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1840,7 +1800,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -1886,7 +1845,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1932,7 +1890,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -1978,7 +1935,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2024,7 +1980,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2070,7 +2025,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2116,7 +2070,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2162,7 +2115,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2208,7 +2160,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2254,7 +2205,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2300,7 +2250,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2346,7 +2295,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2392,7 +2340,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2438,7 +2385,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2484,7 +2430,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2530,7 +2475,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2567,7 +2511,7 @@
   "print_hide": 0,
   "print_hide_if_no_value": 0,
   "print_width": null,
-  "read_only": 0,
+  "read_only": 1,
   "report_hide": 0,
   "reqd": 0,
   "search_index": 0,
@@ -2576,7 +2520,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2622,7 +2565,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2668,7 +2610,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2714,7 +2655,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2760,7 +2700,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2806,7 +2745,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -2852,7 +2790,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2898,7 +2835,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -2944,53 +2880,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
-  "allow_on_submit": 0,
-  "bold": 0,
-  "collapsible": 0,
-  "collapsible_depends_on": null,
-  "columns": 0,
-  "default": null,
-  "depends_on": null,
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Custom Field",
-  "dt": "Material Request",
-  "fetch_from": "frappe_user.department",
-  "fetch_if_empty": 0,
-  "fieldname": "ind_department",
-  "fieldtype": "Read Only",
-  "hidden": 0,
-  "ignore_user_permissions": 0,
-  "ignore_xss_filter": 0,
-  "in_global_search": 0,
-  "in_list_view": 0,
-  "in_standard_filter": 0,
-  "insert_after": "schedule_date",
-  "label": "IND Department",
-  "length": 0,
-  "modified": "2019-10-27 23:09:38.794552",
-  "name": "Material Request-ind_department",
-  "no_copy": 0,
-  "options": null,
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "permlevel": 0,
-  "precision": "",
-  "print_hide": 0,
-  "print_hide_if_no_value": 0,
-  "print_width": null,
-  "read_only": 0,
-  "report_hide": 0,
-  "reqd": 0,
-  "search_index": 0,
-  "translatable": 0,
-  "unique": 0,
-  "width": null
- },
- {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3036,7 +2925,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -3082,7 +2970,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3128,7 +3015,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3174,7 +3060,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3220,7 +3105,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3266,7 +3150,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3312,7 +3195,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -3358,7 +3240,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3404,7 +3285,51 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
+  "allow_on_submit": 0,
+  "bold": 0,
+  "collapsible": 0,
+  "collapsible_depends_on": null,
+  "columns": 0,
+  "default": null,
+  "depends_on": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Custom Field",
+  "dt": "Material Request",
+  "fetch_from": null,
+  "fetch_if_empty": 0,
+  "fieldname": "ind_department1",
+  "fieldtype": "Link",
+  "hidden": 0,
+  "ignore_user_permissions": 0,
+  "ignore_xss_filter": 0,
+  "in_global_search": 0,
+  "in_list_view": 0,
+  "in_standard_filter": 0,
+  "insert_after": "ind_cb",
+  "label": "Requested Department",
+  "length": 0,
+  "modified": "2020-05-12 23:32:24.633350",
+  "name": "Material Request-ind_department1",
+  "no_copy": 0,
+  "options": "Department",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "permlevel": 0,
+  "precision": "",
+  "print_hide": 0,
+  "print_hide_if_no_value": 0,
+  "print_width": null,
+  "read_only": 0,
+  "report_hide": 0,
+  "reqd": 1,
+  "search_index": 0,
+  "translatable": 0,
+  "unique": 0,
+  "width": null
+ },
+ {
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3450,7 +3375,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3496,7 +3420,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3542,7 +3465,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3588,7 +3510,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3634,7 +3555,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3680,7 +3600,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3726,7 +3645,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -3772,7 +3690,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3818,7 +3735,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3864,7 +3780,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3910,7 +3825,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -3956,7 +3870,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4002,7 +3915,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4048,7 +3960,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4094,7 +4005,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4140,7 +4050,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4186,7 +4095,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4232,7 +4140,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4278,7 +4185,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -4324,7 +4230,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4370,7 +4275,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4416,7 +4320,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4462,7 +4365,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -4508,7 +4410,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4554,7 +4455,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4600,7 +4500,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -4646,7 +4545,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4692,7 +4590,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4738,7 +4635,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4775,7 +4671,7 @@
   "print_hide": 0,
   "print_hide_if_no_value": 0,
   "print_width": null,
-  "read_only": 0,
+  "read_only": 1,
   "report_hide": 0,
   "reqd": 0,
   "search_index": 0,
@@ -4784,7 +4680,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -4830,7 +4725,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4876,7 +4770,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4922,7 +4815,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -4968,53 +4860,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
-  "allow_on_submit": 0,
-  "bold": 0,
-  "collapsible": 0,
-  "collapsible_depends_on": null,
-  "columns": 0,
-  "default": null,
-  "depends_on": "ind_against_blanket_order",
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Custom Field",
-  "dt": "Work Order",
-  "fetch_from": null,
-  "fetch_if_empty": 0,
-  "fieldname": "ind_blanket_order",
-  "fieldtype": "Link",
-  "hidden": 0,
-  "ignore_user_permissions": 0,
-  "ignore_xss_filter": 0,
-  "in_global_search": 0,
-  "in_list_view": 0,
-  "in_standard_filter": 0,
-  "insert_after": "ind_cb",
-  "label": "Blanket Order",
-  "length": 0,
-  "modified": "2019-11-15 08:44:11.375945",
-  "name": "Work Order-ind_blanket_order",
-  "no_copy": 0,
-  "options": "Blanket Order",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "permlevel": 0,
-  "precision": "",
-  "print_hide": 0,
-  "print_hide_if_no_value": 0,
-  "print_width": null,
-  "read_only": 0,
-  "report_hide": 0,
-  "reqd": 0,
-  "search_index": 0,
-  "translatable": 0,
-  "unique": 0,
-  "width": null
- },
- {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5060,7 +4905,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5106,7 +4950,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5152,7 +4995,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5198,7 +5040,51 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
+  "allow_on_submit": 0,
+  "bold": 0,
+  "collapsible": 0,
+  "collapsible_depends_on": null,
+  "columns": 0,
+  "default": null,
+  "depends_on": "ind_against_blanket_order",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Custom Field",
+  "dt": "Work Order",
+  "fetch_from": null,
+  "fetch_if_empty": 0,
+  "fieldname": "ind_blanket_order",
+  "fieldtype": "Link",
+  "hidden": 0,
+  "ignore_user_permissions": 0,
+  "ignore_xss_filter": 0,
+  "in_global_search": 0,
+  "in_list_view": 0,
+  "in_standard_filter": 0,
+  "insert_after": "ind_cb",
+  "label": "Blanket Order",
+  "length": 0,
+  "modified": "2019-11-15 08:44:11.375945",
+  "name": "Work Order-ind_blanket_order",
+  "no_copy": 0,
+  "options": "Blanket Order",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "permlevel": 0,
+  "precision": "",
+  "print_hide": 0,
+  "print_hide_if_no_value": 0,
+  "print_width": null,
+  "read_only": 0,
+  "report_hide": 0,
+  "reqd": 0,
+  "search_index": 0,
+  "translatable": 0,
+  "unique": 0,
+  "width": null
+ },
+ {
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -5244,7 +5130,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5290,7 +5175,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5336,7 +5220,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5382,7 +5265,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -5428,7 +5310,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5474,7 +5355,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5520,7 +5400,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -5566,7 +5445,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5612,7 +5490,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -5658,7 +5535,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5704,7 +5580,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5750,7 +5625,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5796,7 +5670,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -5842,7 +5715,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5888,7 +5760,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5934,7 +5805,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -5980,7 +5850,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6026,7 +5895,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -6072,7 +5940,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -6118,7 +5985,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6164,7 +6030,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 1,
   "bold": 0,
   "collapsible": 0,
@@ -6210,53 +6075,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
-  "allow_on_submit": 0,
-  "bold": 0,
-  "collapsible": 0,
-  "collapsible_depends_on": null,
-  "columns": 0,
-  "default": null,
-  "depends_on": null,
-  "description": "Running Furnaces*10000 Kg",
-  "docstatus": 0,
-  "doctype": "Custom Field",
-  "dt": "Stock Entry",
-  "fetch_from": null,
-  "fetch_if_empty": 0,
-  "fieldname": "ind_furnace_total_capacity",
-  "fieldtype": "Read Only",
-  "hidden": 0,
-  "ignore_user_permissions": 0,
-  "ignore_xss_filter": 0,
-  "in_global_search": 0,
-  "in_list_view": 0,
-  "in_standard_filter": 0,
-  "insert_after": "get_items",
-  "label": "Furnace Total Capacity in Kg",
-  "length": 0,
-  "modified": "2020-02-03 22:01:57.676189",
-  "name": "Stock Entry-ind_furnace_total_capacity",
-  "no_copy": 0,
-  "options": null,
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "permlevel": 0,
-  "precision": "",
-  "print_hide": 0,
-  "print_hide_if_no_value": 0,
-  "print_width": null,
-  "read_only": 0,
-  "report_hide": 0,
-  "reqd": 0,
-  "search_index": 0,
-  "translatable": 0,
-  "unique": 0,
-  "width": null
- },
- {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6302,7 +6120,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6348,7 +6165,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6356,13 +6172,13 @@
   "columns": 0,
   "default": null,
   "depends_on": null,
-  "description": null,
+  "description": "Running Furnaces*10000 Kg",
   "docstatus": 0,
   "doctype": "Custom Field",
   "dt": "Stock Entry",
-  "fetch_from": "bom_no.ind_item_group",
+  "fetch_from": null,
   "fetch_if_empty": 0,
-  "fieldname": "ind_item_group_for_melting_process",
+  "fieldname": "ind_furnace_total_capacity",
   "fieldtype": "Read Only",
   "hidden": 0,
   "ignore_user_permissions": 0,
@@ -6370,11 +6186,11 @@
   "in_global_search": 0,
   "in_list_view": 0,
   "in_standard_filter": 0,
-  "insert_after": "ind_furnace_total_capacity",
-  "label": "Item Group for melting process",
+  "insert_after": "get_items",
+  "label": "Furnace Total Capacity in Kg",
   "length": 0,
-  "modified": "2020-02-03 22:47:40.838909",
-  "name": "Stock Entry-ind_item_group_for_melting_process",
+  "modified": "2020-02-03 22:01:57.676189",
+  "name": "Stock Entry-ind_furnace_total_capacity",
   "no_copy": 0,
   "options": null,
   "parent": null,
@@ -6394,7 +6210,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6440,7 +6255,51 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
+  "allow_on_submit": 0,
+  "bold": 0,
+  "collapsible": 0,
+  "collapsible_depends_on": null,
+  "columns": 0,
+  "default": null,
+  "depends_on": null,
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Custom Field",
+  "dt": "Stock Entry",
+  "fetch_from": "bom_no.ind_item_group",
+  "fetch_if_empty": 0,
+  "fieldname": "ind_item_group_for_melting_process",
+  "fieldtype": "Read Only",
+  "hidden": 0,
+  "ignore_user_permissions": 0,
+  "ignore_xss_filter": 0,
+  "in_global_search": 0,
+  "in_list_view": 0,
+  "in_standard_filter": 0,
+  "insert_after": "ind_furnace_total_capacity",
+  "label": "Item Group for melting process",
+  "length": 0,
+  "modified": "2020-02-03 22:47:40.838909",
+  "name": "Stock Entry-ind_item_group_for_melting_process",
+  "no_copy": 0,
+  "options": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "permlevel": 0,
+  "precision": "",
+  "print_hide": 0,
+  "print_hide_if_no_value": 0,
+  "print_width": null,
+  "read_only": 0,
+  "report_hide": 0,
+  "reqd": 0,
+  "search_index": 0,
+  "translatable": 0,
+  "unique": 0,
+  "width": null
+ },
+ {
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6486,7 +6345,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6532,7 +6390,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6578,7 +6435,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6624,7 +6480,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6670,7 +6525,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6716,7 +6570,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6762,7 +6615,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6808,7 +6660,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6854,7 +6705,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6900,7 +6750,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6946,7 +6795,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -6992,7 +6840,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7038,7 +6885,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7084,7 +6930,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7130,7 +6975,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7176,7 +7020,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7222,7 +7065,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7268,7 +7110,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7314,7 +7155,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7360,7 +7200,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7406,7 +7245,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7452,7 +7290,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7498,7 +7335,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7544,7 +7380,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7590,7 +7425,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7636,7 +7470,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7682,7 +7515,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7728,7 +7560,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 1,
@@ -7774,7 +7605,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
@@ -7820,7 +7650,6 @@
   "width": null
  },
  {
-  "allow_in_quick_entry": 0,
   "allow_on_submit": 0,
   "bold": 0,
   "collapsible": 0,
