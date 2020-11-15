@@ -36,12 +36,12 @@
   "docstatus": 0,
   "doctype": "Custom Script",
   "dt": "Material Request",
-  "modified": "2019-10-07 00:50:25.637098",
+  "modified": "2020-11-08 22:47:50.539037",
   "name": "Material Request-Client",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Material Request', {\n\trefresh(frm) {\n\t\t// your code here\n\t\t\n\n\n\t}\n})\n\nfrappe.ui.form.on('Material Request Item', {\n\trefresh(frm) {\n\t\t// your code here\n//\t\tif (frm.doc.material_request_type!=\"Material Transfer\" && )\n\t\t\n\t}\n})"
+  "script": "frappe.ui.form.on('Material Request', {\n\trefresh(frm) {\n\t    cur_frm.fields_dict['ind_department1'].get_query = function(doc) {\n\t        return {\n\t            filters: {\n\t                \"is_group\": '0',\n\t                \"disabled\":\"0\"\n\t            }\n\t        }\n\t    }\n    }\n});"
  },
  {
   "docstatus": 0,

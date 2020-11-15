@@ -7512,5 +7512,49 @@
     "role": "Accounts Manager"
    }
   ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "[{\"label\":\"Employee\",\"fieldname\":\"Employee\",\"fieldtype\":\"Link.Employee\",\"width\":150,\"id\":\"Employee\",\"name\":\"Employee\",\"editable\":false,\"compareValue\":null},{\"label\":\"Employee Name\",\"fieldname\":\"Employee Name\",\"fieldtype\":\"\",\"width\":200,\"id\":\"Employee Name\",\"name\":\"Employee Name\",\"editable\":false,\"compareValue\":null},{\"label\":\"Department\",\"fieldname\":\"Department\",\"fieldtype\":\"\",\"width\":150,\"id\":\"Department\",\"name\":\"Department\",\"editable\":false,\"compareValue\":null},{\"label\":\"Annual Leave (1Y) Balance\",\"fieldname\":\"Annual Leave (1Y) Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Annual Leave (1Y) Balance\",\"name\":\"Annual Leave (1Y) Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Annual Leave (2Y) Balance\",\"fieldname\":\"Annual Leave (2Y) Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Annual Leave (2Y) Balance\",\"name\":\"Annual Leave (2Y) Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Annual Leave 21Days Balance\",\"fieldname\":\"Annual Leave 21Days Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Annual Leave 21Days Balance\",\"name\":\"Annual Leave 21Days Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Annual Leave 30Days Balance\",\"fieldname\":\"Annual Leave 30Days Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Annual Leave 30Days Balance\",\"name\":\"Annual Leave 30Days Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Annual Leave 45Days Balance\",\"fieldname\":\"Annual Leave 45Days Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Annual Leave 45Days Balance\",\"name\":\"Annual Leave 45Days Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Casual Leave Balance\",\"fieldname\":\"Casual Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Casual Leave Balance\",\"name\":\"Casual Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Emergency Leave Balance\",\"fieldname\":\"Emergency Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Emergency Leave Balance\",\"name\":\"Emergency Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Examination Leave Balance\",\"fieldname\":\"Examination Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Examination Leave Balance\",\"name\":\"Examination Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Hajj Leave Balance\",\"fieldname\":\"Hajj Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Hajj Leave Balance\",\"name\":\"Hajj Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Marriage leave Balance\",\"fieldname\":\"Marriage leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Marriage leave Balance\",\"name\":\"Marriage leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"New-Born Child Balance\",\"fieldname\":\"New-Born Child Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"New-Born Child Balance\",\"name\":\"New-Born Child Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Scientific Leave Balance\",\"fieldname\":\"Scientific Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Scientific Leave Balance\",\"name\":\"Scientific Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Sick Leave Balance\",\"fieldname\":\"Sick Leave Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Sick Leave Balance\",\"name\":\"Sick Leave Balance\",\"editable\":false,\"compareValue\":null},{\"label\":\"Sick Leave 120D Balance\",\"fieldname\":\"Sick Leave 120D Balance\",\"fieldtype\":\"Float\",\"width\":160,\"id\":\"Sick Leave 120D Balance\",\"name\":\"Sick Leave 120D Balance\",\"editable\":false,\"compareValue\":null}]",
+  "letter_head": "Indipco",
+  "modified": "2020-10-04 07:21:00.697366",
+  "module": "HR",
+  "name": "CR Leave Balance",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Employee",
+  "reference_report": "Employee Leave Balance",
+  "report_name": "CR Leave Balance",
+  "report_script": null,
+  "report_type": "Custom Report",
+  "roles": [
+   {
+    "parent": "CR Leave Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "CR Leave Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR Manager"
+   },
+   {
+    "parent": "CR Leave Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR User"
+   }
+  ]
  }
 ]
