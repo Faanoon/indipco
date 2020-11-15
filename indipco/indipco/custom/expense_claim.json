@@ -222,6 +222,30 @@
   }
  ],
  "doctype": "Expense Claim",
- "property_setters": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2020-06-10 22:33:21.764173",
+   "default_value": null,
+   "doc_type": "Expense Claim",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "naming_series",
+   "idx": 0,
+   "modified": "2020-06-10 22:33:21.764173",
+   "modified_by": "Administrator",
+   "name": "Expense Claim-naming_series-options",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "options",
+   "property_type": "Text",
+   "value": "HR-EXP-.YYYY.-"
+  }
+ ],
  "sync_on_migrate": 1
 }
