@@ -174,5 +174,6 @@ doc_events = {
 fixtures = ["Custom Field",
             "Custom Script",
             "Print Format",
-            "Report"
+            "Report",
+            "Workflow"
             ]
