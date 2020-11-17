@@ -300,7 +300,7 @@
   "doctype": "Workflow",
   "document_type": "Material Request",
   "is_active": 1,
-  "modified": "2020-05-16 20:48:00.963692",
+  "modified": "2020-11-17 14:28:48.718437",
   "name": "Material Request",
   "override_status": 1,
   "parent": null,
@@ -309,7 +309,7 @@
   "send_email_alert": 0,
   "states": [
    {
-    "allow_edit": "CEO",
+    "allow_edit": "All",
     "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
