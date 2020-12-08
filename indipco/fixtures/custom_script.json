@@ -75,5 +75,16 @@
   "parentfield": null,
   "parenttype": null,
   "script": "frappe.ui.form.on('Work Order', {\n\trefresh(frm) {\n\t\t// your code here\n\t\tif(frm.doc.ind_routing==\"Melting\"){\n\t\t    frm.doc.fg_warehouse=\"Magnesium Treatment - INDIPCO\";\n\t\t    frm.doc.wip_warehouse=\"Melting - INDIPCO\";\n\t\t}\n\t\t\n\t\t\n\t\t\n\t\t\n\t}\n});"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Script",
+  "dt": "Payroll Entry",
+  "modified": "2020-12-07 12:40:32.170869",
+  "name": "Payroll Entry-Client",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "script": "frappe.ui.form.on('Payroll Entry', {\n\trefresh(frm) {\n\t\t// your code here\n\t    cur_frm.fields_dict['department'].get_query = function(doc) {\n\t        return {\n\t            filters: {\n\t                \"is_group\": '0',\n\t                \"disabled\":\"0\"\n\t            }\n\t        };\n\t    };\n\n\t}\n});\n"
  }
 ]
