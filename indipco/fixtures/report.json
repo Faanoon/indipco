@@ -7026,7 +7026,7 @@
  },
  {
   "add_total_row": 0,
-  "disable_prepared_report": 0,
+  "disable_prepared_report": 1,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
@@ -7034,7 +7034,7 @@
   "javascript": null,
   "json": null,
   "letter_head": null,
-  "modified": "2017-02-24 20:14:07.626391",
+  "modified": "2020-12-21 12:07:14.027480",
   "module": "Stock",
   "name": "Stock Ledger",
   "parent": null,
@@ -7477,7 +7477,7 @@
  },
  {
   "add_total_row": 1,
-  "disable_prepared_report": 0,
+  "disable_prepared_report": 1,
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
@@ -7485,7 +7485,7 @@
   "javascript": null,
   "json": null,
   "letter_head": null,
-  "modified": "2019-11-02 22:47:20.851758",
+  "modified": "2020-12-21 12:06:51.087828",
   "module": "Stock",
   "name": "Stock Balance",
   "parent": null,
@@ -7554,6 +7554,50 @@
     "parentfield": "roles",
     "parenttype": "Report",
     "role": "HR User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "Yes",
+  "javascript": null,
+  "json": null,
+  "letter_head": "Indipco",
+  "modified": "2020-12-25 20:44:21.609188",
+  "module": "indipco",
+  "name": "Budget Statement",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Budget",
+  "reference_report": null,
+  "report_name": "Budget Statement",
+  "report_script": null,
+  "report_type": "Script Report",
+  "roles": [
+   {
+    "parent": "Budget Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Budget Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Budget Statement",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
    }
   ]
  }

@@ -1272,5 +1272,31 @@
   "raw_printing": 0,
   "show_section_headings": 0,
   "standard": "No"
+ },
+ {
+  "align_labels_right": 0,
+  "css": null,
+  "custom_format": 0,
+  "default_print_language": null,
+  "disabled": 0,
+  "doc_type": "BOM",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2>BOM<br><small>{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"company\", \"print_hide\": 0, \"label\": \"Company\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"item\", \"print_hide\": 0, \"label\": \"Item\"}, {\"fieldname\": \"description\", \"print_hide\": 0, \"label\": \"Item Description\"}, {\"fieldname\": \"item_name\", \"print_hide\": 0, \"label\": \"Item Name\"}, {\"fieldname\": \"uom\", \"print_hide\": 0, \"label\": \"Item UOM\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"is_active\", \"print_hide\": 0, \"label\": \"Is Active\"}, {\"fieldname\": \"is_default\", \"print_hide\": 0, \"label\": \"Is Default\"}, {\"fieldname\": \"allow_alternative_item\", \"print_hide\": 0, \"label\": \"Allow Alternative Item\"}, {\"fieldname\": \"ind_item_group\", \"print_hide\": 0, \"label\": \"Item Group\"}, {\"fieldname\": \"quantity\", \"print_hide\": 0, \"label\": \"Quantity\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Currency and Price List\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"currency\", \"print_hide\": 0, \"label\": \"Currency\"}, {\"fieldname\": \"conversion_rate\", \"print_hide\": 0, \"label\": \"Conversion Rate\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Operations\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"with_operations\", \"print_hide\": 0, \"label\": \"With Operations\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"transfer_material_against\", \"print_hide\": 0, \"label\": \"Transfer Material Against\"}, {\"fieldname\": \"routing\", \"print_hide\": 0, \"label\": \"Routing\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"operations\", \"print_hide\": 0, \"label\": \"Operations\", \"visible_columns\": [{\"fieldname\": \"operation\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"workstation\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"hour_rate\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"time_in_mins\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"operating_cost\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"base_hour_rate\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"base_operating_cost\", \"print_width\": \"\", \"print_hide\": 0}]}, {\"fieldtype\": \"Section Break\", \"label\": \"Materials\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"inspection_required\", \"print_hide\": 0, \"label\": \"Quality Inspection Required\"}, {\"fieldname\": \"quality_inspection_template\", \"print_hide\": 0, \"label\": \"Quality Inspection Template\"}, {\"fieldname\": \"items\", \"print_hide\": 0, \"label\": \"Items\", \"visible_columns\": [{\"fieldname\": \"item_code\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"item_name\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"operation\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"bom_no\", \"print_width\": \"150px\", \"print_hide\": 0}, {\"fieldname\": \"source_warehouse\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"allow_alternative_item\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"qty\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"uom\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"stock_qty\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"stock_uom\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"rate\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"amount\", \"print_width\": \"150px\", \"print_hide\": 0}]}, {\"fieldtype\": \"Section Break\", \"label\": \"Scrap\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"scrap_items\", \"print_hide\": 0, \"label\": \"Scrap Items\", \"visible_columns\": [{\"fieldname\": \"item_code\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"item_name\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"stock_qty\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"rate\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"amount\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"stock_uom\", \"print_width\": \"\", \"print_hide\": 0}]}, {\"fieldtype\": \"Section Break\", \"label\": \"Costing\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"operating_cost\", \"print_hide\": 0, \"label\": \"Operating Cost\"}, {\"fieldname\": \"raw_material_cost\", \"print_hide\": 0, \"label\": \"Raw Material Cost\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"base_scrap_material_cost\", \"print_hide\": 0, \"label\": \"Scrap Material Cost(Company Currency)\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"total_cost\", \"print_hide\": 0, \"label\": \"Total Cost\"}]",
+  "html": null,
+  "line_breaks": 0,
+  "modified": "2020-12-21 11:30:13.634380",
+  "module": "Manufacturing",
+  "name": "BOM",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 1,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 0,
+  "standard": "No"
  }
 ]
