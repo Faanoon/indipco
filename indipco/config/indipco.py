@@ -49,15 +49,13 @@ def get_data():
               "is_query_report": True,
               "name": "Budget Statement",
               "doctype": "Budget"
-            }
-
-
-
-
-
-
-
+            },
+            {
+                "type":"report",
+                "is_query_report": True,
+                "name": "Budget Variance With Percentage Report",
+                "doctype": "Cost Center"
+          }
         ]
       }
-
   ]
