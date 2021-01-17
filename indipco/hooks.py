@@ -82,7 +82,11 @@ app_license = "MIT"
 # Hook on document methods and events
 doc_events = {
 
- 	"Material Request": 
+    "Leave Period": 
+    {
+        "validate": "indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
+    },
+        "Material Request": 
     {
         "validate": "indipco.hooks_call.material_request.sales_user_validation"
     },
@@ -123,6 +127,11 @@ doc_events = {
 #       "refresh": "indipco.hooks_call.leave_allocation.test"
 #   },
 
+}
+scheduler_events = {
+	"0 2 1 * *": [
+		"indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
+	]
 }
 #doc_events = {
 #	"Loan": {
