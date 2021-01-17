@@ -75,4 +75,4 @@ def allocate_earned_leaves_to_employees_who_joined_last_month(self,method):
 									 FROM `tabLeave Ledger Entry`
 									 WHERE
 									 	transaction_type = 'Leave Allocation'
-									 	AND leave_type = %s
+									 	AND leave_type = %s""")
