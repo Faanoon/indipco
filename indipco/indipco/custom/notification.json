@@ -29,6 +29,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 0,
    "set_user_permissions": 0,
    "share": 1,
    "submit": 0,
@@ -58,6 +59,7 @@
    "parenttype": null,
    "property": "default_print_format",
    "property_type": "Data",
+   "row_name": null,
    "value": "PF Notification"
   }
  ],

@@ -128,11 +128,11 @@ doc_events = {
 #   },
 
 }
-scheduler_events = {
-	"0 2 1 * *": [
-		"indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
-	]
-}
+#scheduler_events = {
+#	"0 2 1 * *": [
+#		"indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
+#	]
+#}
 #doc_events = {
 #	"Loan": {
 #		"validate": "indipco.hooks_call.duplicate_loan"
