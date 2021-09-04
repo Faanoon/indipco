@@ -181,7 +181,6 @@ doc_events = {
 # 	"frappe.desk.doctype.event.event.get_events": "indipco.event.get_events"
 # }
 fixtures = ["Custom Field",
-            "Custom Script",
             "Print Format",
             "Report",
             "Workflow"
