@@ -86,10 +86,10 @@ doc_events = {
     {
         "validate": "indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
     },
-        "Material Request": 
-    {
-        "validate": "indipco.hooks_call.material_request.sales_user_validation"
-    },
+#        "Material Request": 
+#    {
+#        "validate": "indipco.hooks_call.material_request.sales_user_validation"
+#    },
 
  	"Salary Structure Assignment": 
     {
@@ -110,7 +110,8 @@ doc_events = {
 
     "Salary Slip": 
     {
-        "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date"
+        "validate": "indipco.hooks_call.salary_slip.validate_calculate_end_date",
+	"before_insert": "indipco.api.calculate_deductible_hours_salary_slip"
     },
 
 #    "Stock Entry": {
@@ -120,7 +121,14 @@ doc_events = {
  	"Loan": 
     {
  		"validate": "indipco.hooks_call.loan.duplicate_loan"
+	},
+
+	"Attendance": {
+		"before_submit": "indipco.api.calculate_deductible_hours"
 	}
+
+
+
 #        "Leave Allocation": 
 #   {
 #       "validate": "indipco.hooks_call.leave_allocation.calculate_days_to_allocate"
