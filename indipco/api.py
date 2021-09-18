@@ -8,8 +8,8 @@ from frappe.utils import floor, flt, today, cint, cstr
 def calculate_deductible_hours(self,method):
     deductible_hours = 0
     if self.status == "Present":
-        if flt(self.working_hours) < 7 and flt(self.working_hours) > 6:
-            self.ind_deductible_hours = 7 - self.working_hours
+        if flt(self.working_hours) < 7.5 and flt(self.working_hours) > 5:
+            self.ind_deductible_hours = 7.5 - self.working_hours
 
 @frappe.whitelist()
 def calculate_deductible_hours_salary_slip(self,method):
