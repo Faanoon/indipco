@@ -20,6 +20,12 @@ app_license = "MIT"
 #app_include_css = "/assets/indipco/css/custom.css"
 # app_include_js = "/assets/indipco/js/indipco.js"
 
+#000000000000000000000000 WEBVIEW 0000000000000000000000000
+app_include_css = "/assets/indipco/css/akwad-desk.css"
+web_include_css = "/assets/indipco/css/akwad-web.css"
+web_include_js = "/assets/indipco/js/akwad-web.js"
+#000000000000000000000000 WEBVIEW 000000000000000000000000
+
 # include js, css files in header of web template
 # web_include_css = "/assets/indipco/css/indipco.css"
 # web_include_js = "/assets/indipco/js/indipco.js"
