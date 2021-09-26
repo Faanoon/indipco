@@ -130,7 +130,8 @@ doc_events = {
 	},
 
 	"Attendance": {
-		"before_submit": "indipco.api.calculate_deductible_hours"
+		"before_submit": "indipco.api.calculate_deductible_hours",
+        "onload": "indipco.api.validate_approved_hours"
 	}
 
 
