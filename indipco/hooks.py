@@ -200,5 +200,5 @@ fixtures = ["Custom Field",
             "Report",
             "Workflow",
 	    "Workflow Action",
-	    "workspace"
+	    "Workspace"
             ]
