@@ -33,8 +33,9 @@ def get_columns(filters):
     
     if filters.get("report_type")=="Monthly Salary Summary":
         return [
-            _("Employee") + ":Data:90",
+            _("Employee") + ":Link/Employee:90",
             _("Employee Name") + ":Data:250",
+            _("WO") + ":float:150",
             _("Absent") + ":Float:100",
             _("Present") + ":Float:100",
             _("On Leave") + ":Float:100",
@@ -92,10 +93,18 @@ def get_data(filters):
     elif filters.get("report_type")=="Monthly Salary Summary":
         from_date=filters.get("from_date")
         to_date=filters.get("to_date")
+        from_date=filters.get("from_date")
+        to_date=filters.get("to_date")
+        from_date=filters.get("from_date")
+        to_date=filters.get("to_date")
         return frappe.db.sql("""
         select
         A.employee,
-        B.employee_name,
+        A.employee_name,
+#        (select X1.name from `tabHoliday List` as X1, `tabEmployee` as Y1 where X1.name=Y1.holiday_list),
+#        if(D1.holiday_date,count(D1.holiday_date),0),
+#        sum(if(D1.holiday_date,1,0)),
+        count(if(D1.holiday_date,1,0)),
         sum(if(A.status="Absent",1,0)),
         sum(if(A.status="Present",1,0)),
         sum(if(A.status="On Leave",1,0)),
@@ -111,19 +120,25 @@ def get_data(filters):
         `tabAttendance` as A,
         `tabEmployee` as B,
         `tabSalary Slip` as C,
-        `tabSalary Detail` as C1
+        `tabHoliday List` as D,
+        `tabHoliday` as D1
         
         WHERE
         A.employee=B.name
         &&A.employee=C.employee
-        &&C.name=C1.parent
+        &&B.holiday_list=D.name
+#        &&A.employee=B.holiday_list
+        &&D.name=D1.parent
         &&A.attendance_date>='%s'
         &&A.attendance_date<='%s'
-        &&C.posting_date between '%s' and '%s'
+        &&C.posting_date>='%s'
+        &&C.posting_date<='%s'
+        &&D1.holiday_date>='%s'
+        &&D1.holiday_date<='%s'
         
         GROUP BY A.employee
         ORDER BY A.employee ASC 
-        """ %(from_date,to_date,from_date,to_date), as_list=1)
+        """ %(from_date,to_date,from_date,to_date,from_date,to_date), as_list=1)
         
 
         

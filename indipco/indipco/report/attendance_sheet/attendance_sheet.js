@@ -18,7 +18,17 @@ frappe.query_reports["Attendance Sheet"] = {
 "label": __("To Date"),
 "fieldtype": "Date",
 "default": get_today()
+},
+
+{
+"fieldname":"doc_status",
+"label": __("Attendance Status"),
+"fieldtype": "Read Only",
+"options": ["Draft","Submited","Cancelled"],
+"default": "Submited"
 }
+
+
 
 	]
 };

@@ -49,8 +49,8 @@ def get_data(filters):
         A.employee=B.name
 		&&A.attendance_date>='%s'
 		&&A.attendance_date<='%s'
+		&&A.docstatus="1"
 
-        
 		GROUP BY A.employee
 		ORDER BY A.employee ASC 
         """ %(from_date,to_date), as_list=1)
