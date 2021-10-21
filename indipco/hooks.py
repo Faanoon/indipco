@@ -88,10 +88,10 @@ web_include_js = "/assets/indipco/js/akwad-web.js"
 # Hook on document methods and events
 doc_events = {
 
-    "Leave Period": 
-    {
-        "validate": "indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
-    },
+#    "Leave Period": 
+#    {
+#        "validate": "indipco.hooks_call.leave_allocation.allocate_earned_leaves_to_employees_who_joined_last_month"
+#    },
 #        "Material Request": 
 #    {
 #        "validate": "indipco.hooks_call.material_request.sales_user_validation"
@@ -196,9 +196,11 @@ doc_events = {
 # 	"frappe.desk.doctype.event.event.get_events": "indipco.event.get_events"
 # }
 fixtures = ["Custom Field",
+            "Client Script",
             "Print Format",
             "Report",
             "Workflow",
 	    "Workflow Action",
+            "Letter Head",
 	    "Workspace"
             ]
