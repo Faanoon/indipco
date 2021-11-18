@@ -29,6 +29,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 0,
    "set_user_permissions": 0,
    "share": 0,
    "submit": 0,
@@ -62,6 +63,7 @@
    "read": 1,
    "report": 1,
    "role": "HR Manager",
+   "select": 0,
    "set_user_permissions": 0,
    "share": 0,
    "submit": 0,
@@ -95,6 +97,7 @@
    "read": 1,
    "report": 1,
    "role": "HR User",
+   "select": 0,
    "set_user_permissions": 0,
    "share": 0,
    "submit": 0,
@@ -102,6 +105,31 @@
   }
  ],
  "doctype": "Leave Period",
- "property_setters": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2021-10-26 14:21:03.383835",
+   "default_value": null,
+   "doc_type": "Leave Period",
+   "docstatus": 0,
+   "doctype_or_field": "DocType",
+   "field_name": null,
+   "idx": 0,
+   "modified": "2021-10-26 14:21:03.383835",
+   "modified_by": "Administrator",
+   "name": "Leave Period-main-search_fields",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "search_fields",
+   "property_type": "Data",
+   "row_name": null,
+   "value": "from_date,to_date"
+  }
+ ],
  "sync_on_migrate": 1
 }

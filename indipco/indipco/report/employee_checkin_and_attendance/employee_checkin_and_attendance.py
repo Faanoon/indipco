@@ -101,10 +101,11 @@ def get_data(filters):
         select
         A.employee,
         A.employee_name,
+        B.holiday_list,
 #        (select X1.name from `tabHoliday List` as X1, `tabEmployee` as Y1 where X1.name=Y1.holiday_list),
 #        if(D1.holiday_date,count(D1.holiday_date),0),
 #        sum(if(D1.holiday_date,1,0)),
-        count(if(D1.holiday_date,1,0)),
+#        count(if(D1.holiday_date,1,0)),
         sum(if(A.status="Absent",1,0)),
         sum(if(A.status="Present",1,0)),
         sum(if(A.status="On Leave",1,0)),
@@ -127,7 +128,7 @@ def get_data(filters):
         A.employee=B.name
         &&A.employee=C.employee
         &&B.holiday_list=D.name
-#        &&A.employee=B.holiday_list
+        &&A.employee=B.name
         &&D.name=D1.parent
         &&A.attendance_date>='%s'
         &&A.attendance_date<='%s'
@@ -135,6 +136,7 @@ def get_data(filters):
         &&C.posting_date<='%s'
         &&D1.holiday_date>='%s'
         &&D1.holiday_date<='%s'
+        &&A.docstatus="1"
         
         GROUP BY A.employee
         ORDER BY A.employee ASC 
