@@ -13,7 +13,7 @@
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "content": "<table style=\"width: 100%;\"><tbody>\n<tr>\n<td style=\"width: 10%; text-align: left;\"><img src=\"/files/QIMC logo.jpg\" style=\"width: 100px;\"></td>\n<td style=\"width: 90%; text-align: center; font-size: 25px;\">Qatar Industrial Manufacturing Co.<br>{{frappe.db.get_value(\"Arabic Translation\", doc.ind_arabic_translation, \"sbb_100\")}}</td>\n</tr></tbody>\n</table>\n\n<table style=\"width: 100%;\"><tbody>\n<tr>\n<td style=\"width: 50%; text-align: left;\"><u><b>Address:</b></u><br>P.O.Box 16875, Doha - State of Qatar, <br>27th Floor, Tel: +974 44344222, <br> Email : qimc@qimc.com.qa<br>Our VAT:\tNot Defined</td>\n<td style=\"width: 50%; text-align: right;\"><u><b>{{frappe.db.get_value(\"Arabic Translation\", doc.ind_arabic_translation, \"sbb_101\")}}</b></u>\n<br>{{frappe.db.get_value(\"Arabic Translation\", doc.ind_arabic_translation, \"sbb_103\")}}\n<br>Not Defined : {{frappe.db.get_value(\"Arabic Translation\", doc.ind_arabic_translation, \"sbb_102\")}}\n</td>\n</tr></tbody>\n</table>",
@@ -29,7 +29,7 @@
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "source": "HTML"
+  "source": "Image"
  },
  {
   "content": null,
