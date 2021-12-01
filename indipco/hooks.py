@@ -4,7 +4,7 @@ from . import __version__ as app_version
 
 app_name = "indipco"
 app_title = "indipco"
-app_publisher = "Taazur"
+app_publisher = "Akwad"
 app_description = "ERP Customisations for INDIPCO"
 app_icon = "octicon octicon-file-directory"
 app_color = "red"
@@ -195,12 +195,12 @@ doc_events = {
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "indipco.event.get_events"
 # }
-fixtures = ["Custom Field",
+fixtures = [
+            "Custom Field",
             "Client Script",
             "Print Format",
             "Report",
             "Workflow",
-	    "Workflow Action",
-            "Letter Head",
-	    "Workspace"
+            "Workflow Action",
+            "Letter Head"
             ]

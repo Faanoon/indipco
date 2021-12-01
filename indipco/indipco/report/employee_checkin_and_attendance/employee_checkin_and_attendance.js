@@ -8,7 +8,9 @@ frappe.query_reports["Employee Checkin and Attendance"] = {
 "fieldname":"from_date",
 "label": __("From Date"),
 "fieldtype": "Date",
-"default": frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(date),-1),14)
+"default": frappe.datetime.add_days(date,-7)
+//"default": frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(date),-1),14)
+//"default": frappe.datetime.add_months(frappe.datetime.month_start(date),-1)
 },
 
 {
@@ -23,7 +25,7 @@ frappe.query_reports["Employee Checkin and Attendance"] = {
 "label": __("Employee"),
 "fieldtype": "Link",
 "options": "Employee",
-"default": "QIMC24"
+"default": "QIMC05"
 },
 
 {
@@ -31,7 +33,7 @@ frappe.query_reports["Employee Checkin and Attendance"] = {
 "label": __("Report Type"),
 "fieldtype": "Select",
 "options":["Monthly Salary Summary","Daily Attendance Daitails"],
-"default":"Monthly Salary Summary"
+"default":"Daily Attendance Daitails"
 }
 
 	]
