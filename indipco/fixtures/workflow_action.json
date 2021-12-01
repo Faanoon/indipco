@@ -28,20 +28,5 @@
   "status": "Open",
   "user": "santosh@akwad.qa",
   "workflow_state": "Created"
- },
- {
-  "completed_by": null,
-  "docstatus": 0,
-  "doctype": "Workflow Action",
-  "modified": "2021-10-26 14:49:02.682498",
-  "name": "500ddf478a",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "reference_doctype": "Leave Application",
-  "reference_name": "HR-LAP-2021-00002",
-  "status": "Open",
-  "user": "santosh@akwad.qa",
-  "workflow_state": "Created"
  }
 ]
