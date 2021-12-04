@@ -12,17 +12,23 @@ frappe.query_reports["Attendance Sheet"] = {
 				frappe.query_report.set_filter_value('employee', value["name"]);
 			});
 		}
-		if(frappe.query_report.get_filter_value('to_date') < frappe.query_report.get_filter_value('from_date')){
-			var from_date = frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(frappe.datetime.add_months(date, -1), -1),-1),14)
-			frappe.query_report.set_filter_value('from_date', from_date);
-		}
+		setTimeout(function(){  
+			if(frappe.query_report.get_filter_value('to_date') < frappe.datetime.add_days(frappe.datetime.month_start(date),14)){
+				var from_date = frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(frappe.datetime.add_months(date, -1), -1),-1),14)
+				frappe.query_report.set_filter_value('from_date', from_date);
+			}
+			else{
+				var from_date = frappe.datetime.add_days(frappe.datetime.month_start(date),14)
+				frappe.query_report.set_filter_value('from_date', from_date);
+			}
+		}, 1000);
 	},
 	"filters": [
 		{
 			"fieldname":"from_date",
 			"label": __("From Date"),
-			"fieldtype": "Date",
-			"default": frappe.datetime.add_days(date,-7)
+			"fieldtype": "Date"
+//			"default": frappe.datetime.add_days(date,-7)
 			//"default": frappe.datetime.add_days(frappe.datetime.month_start(date),14)
 		},
 		{
@@ -43,7 +49,6 @@ frappe.query_reports["Attendance Sheet"] = {
 			"label": __("Employee"),
 			"fieldtype": "Link",
 			"options": "Employee",
-			//"default": "Submited",
 		},
 		{
 			"fieldname":"report_type",

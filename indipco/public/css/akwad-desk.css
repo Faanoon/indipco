@@ -90,5 +90,5 @@ html[data-theme='light'] .timeline-message-box .text-color .text-muted {
     font-size: 90%;
 }
 .layout-side-section {
-    display: none!important;
+    display: none;
 }
