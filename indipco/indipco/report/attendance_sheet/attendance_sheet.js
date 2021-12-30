@@ -5,30 +5,30 @@
 
 
 frappe.query_reports["Attendance Sheet"] = {
-	onload: function() {
+//	onload: function() {
 		//set current logged In Employee
-		if(frappe.session.user != "Administrator"){
-			frappe.db.get_value('Employee', {'user_id': frappe.session.user}, "name", function(value) {
-				frappe.query_report.set_filter_value('employee', value["name"]);
-			});
-		}
-		setTimeout(function(){  
-			if(frappe.query_report.get_filter_value('to_date') < frappe.datetime.add_days(frappe.datetime.month_start(date),14)){
-				var from_date = frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(frappe.datetime.add_months(date, -1), -1),-1),14)
-				frappe.query_report.set_filter_value('from_date', from_date);
-			}
-			else{
-				var from_date = frappe.datetime.add_days(frappe.datetime.month_start(date),14)
-				frappe.query_report.set_filter_value('from_date', from_date);
-			}
-		}, 1000);
-	},
+//		if(frappe.session.user != "Administrator"){
+//			frappe.db.get_value('Employee', {'user_id': frappe.session.user}, "name", function(value) {
+//				frappe.query_report.set_filter_value('employee', value["name"]);
+//			});
+//		}
+//		setTimeout(function(){  
+//			if(frappe.query_report.get_filter_value('to_date') < frappe.datetime.add_days(frappe.datetime.month_start(date),14)){
+//				var from_date = frappe.datetime.add_days(frappe.datetime.add_months(frappe.datetime.month_start(frappe.datetime.add_months(date, -1), -1),-1),14)
+//				frappe.query_report.set_filter_value('from_date', from_date);
+//			}
+//			else{
+//				var from_date = frappe.datetime.add_days(frappe.datetime.month_start(date),14)
+//				frappe.query_report.set_filter_value('from_date', from_date);
+//			}
+//		}, 1000);
+//	},
 	"filters": [
 		{
 			"fieldname":"from_date",
 			"label": __("From Date"),
-			"fieldtype": "Date"
-//			"default": frappe.datetime.add_days(date,-7)
+			"fieldtype": "Date",
+			"default": frappe.datetime.add_days(date,-10)
 			//"default": frappe.datetime.add_days(frappe.datetime.month_start(date),14)
 		},
 		{

@@ -13,7 +13,7 @@ from erpnext.hr.report.employee_leave_balance.employee_leave_balance import (
 
 
 def execute(filters=None):
-	leave_types = frappe.db.sql_list("select A.name from `tabLeave Type` as A, `tabLeave Policy Assignment` as B, `tabLeave Policy` as C, `tabLeave Policy Detail` as C1,`tabEmployee` as D WHERE C.name=C1.parent &&C1.leave_type=A.name &&B.employee=D.name order by name asc")
+	leave_types = frappe.db.sql_list("select name from `tabLeave Type` WHERE ind_disabled=0 ORDER BY name ASC")
 
 	columns = get_columns(leave_types)
 	data = get_data(filters, leave_types)
@@ -22,13 +22,13 @@ def execute(filters=None):
 
 def get_columns(leave_types):
 	columns = [
-		_("Employee") + ":Link.Employee:150",
-		_("Employee Name") + "::200",
-		_("Department") +"::150"
+		_("Employee") + ":Link.Employee:100",
+		_("Employee Name") + "::150"
+#		_("Department") +"::150"
 	]
 
 	for leave_type in leave_types:
-		columns.append(_(leave_type) + ":Float:160")
+		columns.append(_(leave_type) + ":Float:120")
 
 	return columns
 
@@ -48,7 +48,7 @@ def get_data(filters, leave_types):
 	user = frappe.session.user
 	conditions = get_conditions(filters)
 
-	active_employees = frappe.get_list("Employee",
+	active_employees = frappe.get_all("Employee",
 		filters=conditions,
 		fields=["name", "employee_name", "department", "user_id", "leave_approver"])
 
@@ -61,7 +61,7 @@ def get_data(filters, leave_types):
 			leave_approvers.append(employee.leave_approver)
 
 		if (len(leave_approvers) and user in leave_approvers) or (user in ["Administrator", employee.user_id]) or ("HR Manager" in frappe.get_roles(user)):
-			row = [employee.name, employee.employee_name, employee.department]
+			row = [employee.name, employee.employee_name]
 			available_leave = get_leave_details(employee.name, filters.date)
 			for leave_type in leave_types:
 				remaining = 0
